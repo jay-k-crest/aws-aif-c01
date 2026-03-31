@@ -1,0 +1,1033 @@
+{
+  "examName": "AWS Certified AI Practitioner (AIF-C01) Practice Exam",
+  "timeLimitMinutes": 90,
+  "passingScore": 700,
+  "totalQuestions": 65,
+  "scoredQuestions": 50,
+  "unscoredQuestions": 15,
+  "domainWeights": {
+    "Domain 1: Fundamentals of AI and ML": 20,
+    "Domain 2: Fundamentals of GenAI": 24,
+    "Domain 3: Applications of Foundation Models": 28,
+    "Domain 4: Guidelines for Responsible AI": 14,
+    "Domain 5: Security, Compliance, and Governance": 14
+  },
+  "questions": [
+    {
+      "id": 1,
+      "domain": "Domain 1: Fundamentals of AI and ML",
+      "text": "A data scientist is explaining machine learning concepts to business stakeholders. Which of the following best describes the relationship between AI, ML, and deep learning?",
+      "type": "multiple-choice",
+      "options": [
+        "AI and ML are the same thing; deep learning is a completely different field",
+        "AI is the broader field; ML is a subset of AI; deep learning is a subset of ML",
+        "Deep learning is the broadest field; ML and AI are subsets of deep learning",
+        "They are three independent fields with no relationship to each other"
+      ],
+      "correct": [1],
+      "explanation": "AI is the broadest field encompassing any technique that enables machines to mimic human intelligence. ML is a subset of AI focused on learning from data. Deep learning is a subset of ML using neural networks with multiple layers.",
+      "scored": true
+    },
+    {
+      "id": 2,
+      "domain": "Domain 1: Fundamentals of AI and ML",
+      "text": "An organization wants to predict customer churn based on historical purchase patterns, demographics, and user behavior. Which supervised learning approach is most appropriate?",
+      "type": "multiple-choice",
+      "options": [
+        "Classification",
+        "Clustering",
+        "Dimensionality reduction",
+        "Reinforcement learning"
+      ],
+      "correct": [0],
+      "explanation": "Predicting customer churn involves classifying customers into two categories (will churn or will not churn) based on features. This is a binary classification problem, which is a supervised learning task.",
+      "scored": true
+    },
+    {
+      "id": 3,
+      "domain": "Domain 1: Fundamentals of AI and ML",
+      "text": "Which of the following are valid types of data used in AI/ML models? (Select THREE)",
+      "type": "multiple-response",
+      "options": [
+        "Labeled data",
+        "Unlabeled data",
+        "Tabular data",
+        "Time-series data",
+        "Intangible data"
+      ],
+      "correct": [0, 2, 3],
+      "explanation": "Valid data types include labeled and unlabeled data, plus multiple formats like tabular, time-series, image, and text data. Intangible data is not a standard ML data type category.",
+      "scored": true
+    },
+    {
+      "id": 4,
+      "domain": "Domain 1: Fundamentals of AI and ML",
+      "text": "What does 'training and inferencing' mean in the context of machine learning?",
+      "type": "multiple-choice",
+      "options": [
+        "Training is building the model; inferencing is the process of deriving predictions using the trained model",
+        "Training and inferencing are the same process performed on different datasets",
+        "Training is a one-time activity; inferencing is repeated thousands of times",
+        "Training requires labeled data; inferencing only works with unlabeled data"
+      ],
+      "correct": [0],
+      "explanation": "Training is the process of teaching the model using data. Inferencing is applying that trained model to make predictions on new, unseen data.",
+      "scored": true
+    },
+    {
+      "id": 5,
+      "domain": "Domain 1: Fundamentals of AI and ML",
+      "text": "A retail company wants to identify groups of similar customers without predefined labels. Which learning approach should they use?",
+      "type": "multiple-choice",
+      "options": [
+        "Supervised learning with regression",
+        "Supervised learning with classification",
+        "Unsupervised learning with clustering",
+        "Reinforcement learning"
+      ],
+      "correct": [2],
+      "explanation": "Clustering is an unsupervised learning technique that groups similar data points without predefined labels. This is ideal for customer segmentation.",
+      "scored": true
+    },
+    {
+      "id": 6,
+      "domain": "Domain 1: Fundamentals of AI and ML",
+      "text": "Match each ML development lifecycle component to its description.",
+      "type": "matching",
+      "leftItems": [
+        "Data pre-processing",
+        "Model training",
+        "Evaluation",
+        "Hyperparameter tuning",
+        "Deployment"
+      ],
+      "rightItems": [
+        "Adjusting model parameters to optimize performance",
+        "Cleaning and formatting raw data for model consumption",
+        "Testing model performance on validation/test datasets",
+        "Putting the trained model into production",
+        "Teaching the model to find patterns in data"
+      ],
+      "correct": [1, 4, 2, 0, 3],
+      "explanation": "Data pre-processing prepares data; model training teaches patterns; evaluation assesses performance; hyperparameter tuning optimizes; deployment puts it in production.",
+      "scored": true
+    },
+    {
+      "id": 7,
+      "domain": "Domain 1: Fundamentals of AI and ML",
+      "text": "Arrange the ML development lifecycle steps in the correct order.",
+      "type": "ordering",
+      "options": [
+        "Data collection",
+        "Exploratory data analysis (EDA)",
+        "Data pre-processing",
+        "Feature engineering",
+        "Model training",
+        "Evaluation",
+        "Deployment",
+        "Monitoring"
+      ],
+      "correct": [0, 1, 2, 3, 4, 5, 6, 7],
+      "explanation": "The correct ML pipeline sequence starts with data collection, followed by analysis, preprocessing, feature engineering, training, evaluation, deployment, and ongoing monitoring.",
+      "scored": true
+    },
+    {
+      "id": 8,
+      "domain": "Domain 1: Fundamentals of AI and ML",
+      "text": "What is the primary purpose of exploratory data analysis (EDA) in the ML development lifecycle?",
+      "type": "multiple-choice",
+      "options": [
+        "To train the first version of the model",
+        "To understand data patterns, distributions, and anomalies",
+        "To deploy the model to production",
+        "To scale the model for inference"
+      ],
+      "correct": [1],
+      "explanation": "EDA helps data scientists understand the data through visualization and statistical analysis, identifying patterns, distributions, outliers, and missing values before model training.",
+      "scored": true
+    },
+    {
+      "id": 9,
+      "domain": "Domain 1: Fundamentals of AI and ML",
+      "text": "Which AWS managed AI services are mentioned in the exam scope? (Select TWO)",
+      "type": "multiple-response",
+      "options": [
+        "Amazon SageMaker AI",
+        "Amazon Transcribe",
+        "AWS Brainstorm",
+        "Amazon Comprehend",
+        "Amazon DataMind"
+      ],
+      "correct": [0, 1],
+      "explanation": "Amazon SageMaker AI and Amazon Transcribe are both in-scope services. AWS Brainstorm and Amazon DataMind are not real AWS services.",
+      "scored": true
+    },
+    {
+      "id": 10,
+      "domain": "Domain 1: Fundamentals of AI and ML",
+      "text": "A company is deciding between using a pre-trained open-source model and building a custom model from scratch. Which factor should NOT influence this decision?",
+      "type": "multiple-choice",
+      "options": [
+        "Time to market and development costs",
+        "Specific domain requirements",
+        "Availability of training data",
+        "The color scheme of the company website"
+      ],
+      "correct": [3],
+      "explanation": "The color scheme of a website has no relevance to ML model selection. Relevant factors include cost, time, domain-specific needs, data availability, and business objectives.",
+      "scored": false
+    },
+    {
+      "id": 11,
+      "domain": "Domain 2: Fundamentals of GenAI",
+      "text": "Which of the following best describes what a token is in the context of generative AI?",
+      "type": "multiple-choice",
+      "options": [
+        "A physical device used for authentication in AI systems",
+        "A small unit of text (word, subword, or character) that LLMs process",
+        "A cryptocurrency used to pay for cloud services",
+        "A security certificate for AI applications"
+      ],
+      "correct": [1],
+      "explanation": "In GenAI, tokens are fundamental units of text that language models process. They can be words, subwords, or characters depending on the tokenization scheme.",
+      "scored": true
+    },
+    {
+      "id": 12,
+      "domain": "Domain 2: Fundamentals of GenAI",
+      "text": "What is an embedding in the context of generative AI?",
+      "type": "multiple-choice",
+      "options": [
+        "A method of hiding data inside other data",
+        "A numerical representation of text or images that captures semantic meaning",
+        "A type of neural network layer",
+        "An API endpoint in AWS"
+      ],
+      "correct": [1],
+      "explanation": "Embeddings are vector representations (arrays of numbers) that capture the semantic meaning of text, images, or other content, enabling models to understand relationships between concepts.",
+      "scored": true
+    },
+    {
+      "id": 13,
+      "domain": "Domain 2: Fundamentals of GenAI",
+      "text": "Which of the following are core advantages of generative AI solutions? (Select THREE)",
+      "type": "multiple-response",
+      "options": [
+        "Adaptability to various business problems",
+        "Quick responsiveness to requests",
+        "Simplicity of implementation",
+        "Perfect accuracy in all scenarios",
+        "Complete elimination of human judgment"
+      ],
+      "correct": [0, 1, 2],
+      "explanation": "GenAI advantages include adaptability, responsiveness, and simplicity. However, GenAI is not perfectly accurate and still requires human oversight in many scenarios.",
+      "scored": true
+    },
+    {
+      "id": 14,
+      "domain": "Domain 2: Fundamentals of GenAI",
+      "text": "A company is considering GenAI for customer service but is concerned about hallucinations. What does hallucination mean in GenAI?",
+      "type": "multiple-choice",
+      "options": [
+        "When the model takes too long to generate responses",
+        "When the model generates plausible but false or irrelevant information",
+        "When the model refuses to answer a question",
+        "When the model provides responses in the wrong language"
+      ],
+      "correct": [1],
+      "explanation": "Hallucinations occur when GenAI models generate content that sounds plausible but is actually false, misleading, or not grounded in reality. This is a key limitation to consider.",
+      "scored": true
+    },
+    {
+      "id": 15,
+      "domain": "Domain 2: Fundamentals of GenAI",
+      "text": "What is the primary purpose of chunking in the context of generative AI applications?",
+      "type": "multiple-choice",
+      "options": [
+        "Breaking down large documents into smaller, manageable pieces for processing",
+        "Dividing the cost of API calls among multiple departments",
+        "Splitting the model across multiple servers",
+        "Separating different types of data"
+      ],
+      "correct": [0],
+      "explanation": "Chunking breaks large documents or texts into smaller segments that can be processed more effectively by models, especially in RAG (Retrieval Augmented Generation) scenarios.",
+      "scored": true
+    },
+    {
+      "id": 16,
+      "domain": "Domain 2: Fundamentals of GenAI",
+      "text": "Which AWS services and features are designed to help develop GenAI applications? (Select TWO)",
+      "type": "multiple-response",
+      "options": [
+        "Amazon Bedrock PartyRock",
+        "Amazon SageMaker JumpStart",
+        "AWS Lambda Edge",
+        "Amazon Q",
+        "Amazon RDS"
+      ],
+      "correct": [0, 3],
+      "explanation": "Amazon Bedrock PartyRock and Amazon Q are GenAI-specific development tools. AWS Lambda Edge, Amazon SageMaker JumpStart, and Amazon RDS serve different purposes.",
+      "scored": true
+    },
+    {
+      "id": 17,
+      "domain": "Domain 2: Fundamentals of GenAI",
+      "text": "What are transformer-based LLMs and what is their significance in GenAI?",
+      "type": "multiple-choice",
+      "options": [
+        "Older models that have been replaced by modern architectures",
+        "Models that convert text to images",
+        "Deep learning models using attention mechanisms that form the foundation of modern language models",
+        "Models that require manual parameter tuning"
+      ],
+      "correct": [2],
+      "explanation": "Transformer-based LLMs use attention mechanisms to process sequences of data efficiently and form the foundation of most modern GenAI models like GPT and Claude.",
+      "scored": true
+    },
+    {
+      "id": 18,
+      "domain": "Domain 2: Fundamentals of GenAI",
+      "text": "Match each GenAI limitation to a potential business impact.",
+      "type": "matching",
+      "leftItems": [
+        "Hallucinations",
+        "Non-determinism",
+        "Interpretability issues",
+        "High latency responses"
+      ],
+      "rightItems": [
+        "Difficulty explaining why model made specific decision",
+        "Generation of false or misleading information",
+        "Same input producing different outputs",
+        "Slow response times affecting user experience"
+      ],
+      "correct": [1, 2, 0, 3],
+      "explanation": "Hallucinations cause false info; non-determinism causes variable outputs; interpretability makes explanation hard; high latency causes slow responses.",
+      "scored": true
+    },
+    {
+      "id": 19,
+      "domain": "Domain 2: Fundamentals of GenAI",
+      "text": "Which factors should be considered when selecting a GenAI model for a business application? (Select THREE)",
+      "type": "multiple-response",
+      "options": [
+        "Model performance requirements",
+        "Compliance and regulatory constraints",
+        "The hardware the CEO prefers",
+        "Model capabilities and modalities",
+        "Cost considerations"
+      ],
+      "correct": [0, 1, 3],
+      "explanation": "Relevant selection criteria include performance needs, compliance requirements, capabilities, cost, and constraints. CEO hardware preferences are not a technical consideration.",
+      "scored": false
+    },
+    {
+      "id": 20,
+      "domain": "Domain 2: Fundamentals of GenAI",
+      "text": "What is the foundation model lifecycle and which phase comes after model pre-training?",
+      "type": "multiple-choice",
+      "options": [
+        "Deployment immediately follows pre-training",
+        "Evaluation comes after pre-training",
+        "Fine-tuning and evaluation come after pre-training",
+        "Data selection comes after pre-training"
+      ],
+      "correct": [2],
+      "explanation": "The foundation model lifecycle includes data selection, model selection, pre-training, fine-tuning, evaluation, deployment, and feedback. Fine-tuning and evaluation follow pre-training.",
+      "scored": true
+    },
+    {
+      "id": 21,
+      "domain": "Domain 3: Applications of Foundation Models",
+      "text": "A company wants to build a customer Q&A system using internal documents without retraining the model. Which approach should they implement?",
+      "type": "multiple-choice",
+      "options": [
+        "Fine-tuning the model with all documents",
+        "Retrieval Augmented Generation (RAG) using Amazon Bedrock Knowledge Bases",
+        "Manual pre-training on company data",
+        "Creating a separate model for each document"
+      ],
+      "correct": [1],
+      "explanation": "RAG (Retrieval Augmented Generation) is the ideal approach. It retrieves relevant documents and provides them as context to the model without expensive retraining or fine-tuning.",
+      "scored": true
+    },
+    {
+      "id": 22,
+      "domain": "Domain 3: Applications of Foundation Models",
+      "text": "Which of the following are valid considerations when selecting a pre-trained foundation model? (Select TWO)",
+      "type": "multiple-response",
+      "options": [
+        "Model cost",
+        "Inference latency requirements",
+        "The month the model was released",
+        "Model input/output length constraints",
+        "The founder's birth date"
+      ],
+      "correct": [0, 1],
+      "explanation": "Cost and latency are critical selection criteria. Input/output length is also important. Release month and founder details are not relevant technical considerations.",
+      "scored": true
+    },
+    {
+      "id": 23,
+      "domain": "Domain 3: Applications of Foundation Models",
+      "text": "What is prompt engineering and why is it important in foundation model applications?",
+      "type": "multiple-choice",
+      "options": [
+        "A method for retraining models on new data",
+        "The practice of designing effective inputs (prompts) to elicit desired outputs from models",
+        "A way to reduce model costs",
+        "A technique for converting models to different formats"
+      ],
+      "correct": [1],
+      "explanation": "Prompt engineering involves crafting effective prompts/instructions to guide models toward desired outputs. It's crucial for improving response quality without retraining.",
+      "scored": true
+    },
+    {
+      "id": 24,
+      "domain": "Domain 3: Applications of Foundation Models",
+      "text": "Which of the following are effective prompt engineering techniques? (Select THREE)",
+      "type": "multiple-response",
+      "options": [
+        "Chain-of-thought prompting",
+        "Zero-shot prompting",
+        "Few-shot prompting",
+        "Ignoring context in prompts",
+        "Being vague about requirements"
+      ],
+      "correct": [0, 1, 2],
+      "explanation": "Chain-of-thought, zero-shot, and few-shot are all valid techniques. Ignoring context and being vague contradict best practices for prompt engineering.",
+      "scored": true
+    },
+    {
+      "id": 25,
+      "domain": "Domain 3: Applications of Foundation Models",
+      "text": "What does temperature control in foundation models do?",
+      "type": "multiple-choice",
+      "options": [
+        "Adjusts the physical temperature of the server",
+        "Controls the randomness/creativity of model outputs",
+        "Determines how fast the model processes requests",
+        "Sets the maximum number of tokens allowed"
+      ],
+      "correct": [1],
+      "explanation": "Temperature is an inference parameter that controls output randomness. Higher temperature = more creative/random; lower temperature = more deterministic/focused.",
+      "scored": true
+    },
+    {
+      "id": 26,
+      "domain": "Domain 3: Applications of Foundation Models",
+      "text": "What are AWS services that support storing embeddings in vector databases? (Select TWO)",
+      "type": "multiple-response",
+      "options": [
+        "Amazon OpenSearch Service",
+        "Amazon RDS for PostgreSQL",
+        "Amazon Redshift (data warehouse only)",
+        "Amazon S3",
+        "Amazon DynamoDB"
+      ],
+      "correct": [0, 1],
+      "explanation": "Amazon OpenSearch Service and Amazon RDS for PostgreSQL support vector storage. Redshift, S3, and DynamoDB don't have native vector database capabilities.",
+      "scored": true
+    },
+    {
+      "id": 27,
+      "domain": "Domain 3: Applications of Foundation Models",
+      "text": "What are agents in the context of foundation model applications?",
+      "type": "multiple-choice",
+      "options": [
+        "Human employees who monitor AI systems",
+        "Autonomous entities that use models to break down and execute multi-step tasks",
+        "Security tools that protect models",
+        "Payment processors for AI services"
+      ],
+      "correct": [1],
+      "explanation": "Agents are autonomous systems that use foundation models to reason through and execute multi-step tasks, making decisions and calling appropriate tools as needed.",
+      "scored": true
+    },
+    {
+      "id": 28,
+      "domain": "Domain 3: Applications of Foundation Models",
+      "text": "Arrange the foundation model customization approaches from least to most expensive in terms of compute resources.",
+      "type": "ordering",
+      "options": [
+        "Fine-tuning",
+        "Pre-training",
+        "In-context learning",
+        "RAG (Retrieval Augmented Generation)"
+      ],
+      "correct": [2, 3, 0, 1],
+      "explanation": "In-context learning is cheapest (no training), followed by RAG, then fine-tuning, then full pre-training which is most resource-intensive.",
+      "scored": true
+    },
+    {
+      "id": 29,
+      "domain": "Domain 3: Applications of Foundation Models",
+      "text": "What does fine-tuning a foundation model involve?",
+      "type": "multiple-choice",
+      "options": [
+        "Adjusting only the input/output layer weights",
+        "Training the entire model from scratch",
+        "Updating model weights on domain-specific data to adapt the model",
+        "Adding more parameters to the model"
+      ],
+      "correct": [2],
+      "explanation": "Fine-tuning adapts a pre-trained model by training it on domain-specific data, updating weights to specialize the model for a particular task or domain.",
+      "scored": false
+    },
+    {
+      "id": 30,
+      "domain": "Domain 3: Applications of Foundation Models",
+      "text": "What is instruction tuning when applied to foundation models?",
+      "type": "multiple-choice",
+      "options": [
+        "Writing instructions for users of the model",
+        "Fine-tuning models to follow specific instructions and command patterns",
+        "Tuning the model's instructions for hardware deployment",
+        "Adjusting inference parameters"
+      ],
+      "correct": [1],
+      "explanation": "Instruction tuning fine-tunes models on examples of instructions and their desired outcomes, making models better at following specific commands and instructions.",
+      "scored": true
+    },
+    {
+      "id": 31,
+      "domain": "Domain 3: Applications of Foundation Models",
+      "text": "How should data be prepared for fine-tuning a foundation model? (Select THREE)",
+      "type": "multiple-response",
+      "options": [
+        "Data curation to select high-quality examples",
+        "Ensuring data is representative of the target domain",
+        "Labeling data for supervised fine-tuning",
+        "Using only unlabeled data",
+        "Data governance and compliance checks"
+      ],
+      "correct": [0, 1, 4],
+      "explanation": "Proper fine-tuning data requires curation, representativeness, and governance. Labeling is important for some types but not all. Unlabeled data alone is insufficient.",
+      "scored": true
+    },
+    {
+      "id": 32,
+      "domain": "Domain 3: Applications of Foundation Models",
+      "text": "Which metrics are used to evaluate foundation model performance for text generation tasks? (Select TWO)",
+      "type": "multiple-response",
+      "options": [
+        "ROUGE (Recall-Oriented Understudy for Gisting Evaluation)",
+        "BLEU (Bilingual Evaluation Understudy)",
+        "Pixel Accuracy",
+        "BERTScore",
+        "Silhouette Coefficient"
+      ],
+      "correct": [0, 3],
+      "explanation": "ROUGE and BERTScore are appropriate for text generation. BLEU is for machine translation. Pixel Accuracy and Silhouette Coefficient measure different types of tasks.",
+      "scored": true
+    },
+    {
+      "id": 33,
+      "domain": "Domain 3: Applications of Foundation Models",
+      "text": "What is Amazon Bedrock Model Evaluation and what does it help determine?",
+      "type": "multiple-choice",
+      "options": [
+        "The cost of using different models",
+        "Whether a foundation model meets business objectives and performs well for specific use cases",
+        "The physical hardware requirements for models",
+        "The release date of models"
+      ],
+      "correct": [1],
+      "explanation": "Amazon Bedrock Model Evaluation helps assess whether a model effectively meets business objectives and performs well for specific use cases through structured evaluation.",
+      "scored": true
+    },
+    {
+      "id": 34,
+      "domain": "Domain 3: Applications of Foundation Models",
+      "text": "Match each prompt engineering technique to its description.",
+      "type": "matching",
+      "leftItems": [
+        "Chain-of-thought",
+        "Zero-shot",
+        "Few-shot",
+        "Prompt templates"
+      ],
+      "rightItems": [
+        "Using reusable prompt structures for consistent outputs",
+        "Providing examples in the prompt to guide model behavior",
+        "Asking model to explain step-by-step reasoning",
+        "Giving no examples, relying on model's base knowledge"
+      ],
+      "correct": [2, 3, 1, 0],
+      "explanation": "Chain-of-thought = step-by-step; zero-shot = no examples; few-shot = with examples; templates = reusable structures.",
+      "scored": true
+    },
+    {
+      "id": 35,
+      "domain": "Domain 3: Applications of Foundation Models",
+      "text": "What are potential security risks in prompt engineering?",
+      "type": "multiple-choice",
+      "options": [
+        "Only slow performance issues",
+        "Prompt injection, poisoning, hijacking, and jailbreaking attacks",
+        "Increased model accuracy",
+        "Higher API costs"
+      ],
+      "correct": [1],
+      "explanation": "Prompt engineering risks include injection attacks, poisoning (malicious training data), hijacking, and jailbreaking attempts to bypass model safeguards.",
+      "scored": false
+    },
+    {
+      "id": 36,
+      "domain": "Domain 4: Guidelines for Responsible AI",
+      "text": "What is bias in the context of AI systems?",
+      "type": "multiple-choice",
+      "options": [
+        "A preference for one particular model architecture",
+        "Systematic prejudice or unfair treatment in model predictions affecting certain groups",
+        "The cost of training models",
+        "The complexity of the model"
+      ],
+      "correct": [1],
+      "explanation": "Bias in AI refers to systematic unfairness or prejudice in model outputs that disadvantages certain demographic groups or populations unfairly.",
+      "scored": true
+    },
+    {
+      "id": 37,
+      "domain": "Domain 4: Guidelines for Responsible AI",
+      "text": "Which of the following are features of responsible AI? (Select THREE)",
+      "type": "multiple-response",
+      "options": [
+        "Bias detection and mitigation",
+        "Fairness in decision-making",
+        "Robustness of models",
+        "Maximum profitability",
+        "Safety considerations"
+      ],
+      "correct": [0, 1, 4],
+      "explanation": "Responsible AI focuses on bias, fairness, inclusivity, robustness, safety, and veracity. Maximum profitability is a business goal, not an AI responsibility feature.",
+      "scored": true
+    },
+    {
+      "id": 38,
+      "domain": "Domain 4: Guidelines for Responsible AI",
+      "text": "What is Amazon Bedrock Guardrails and what is its purpose?",
+      "type": "multiple-choice",
+      "options": [
+        "A tool to measure model accuracy",
+        "A service to identify features of responsible AI and apply safety controls",
+        "A payment processing system",
+        "A data storage solution"
+      ],
+      "correct": [1],
+      "explanation": "Amazon Bedrock Guardrails helps identify responsible AI features and apply safeguards and controls to ensure safe, responsible AI deployments.",
+      "scored": true
+    },
+    {
+      "id": 39,
+      "domain": "Domain 4: Guidelines for Responsible AI",
+      "text": "What legal risks should organizations consider when deploying GenAI systems?",
+      "type": "multiple-choice",
+      "options": [
+        "Only network connectivity issues",
+        "Intellectual property infringement claims, biased outputs, hallucinations, and loss of customer trust",
+        "Only cost overruns",
+        "Only performance metrics"
+      ],
+      "correct": [1],
+      "explanation": "Key legal risks include IP infringement claims, biased model outputs causing discrimination, hallucinations leading to misinformation, and damage to customer trust.",
+      "scored": true
+    },
+    {
+      "id": 40,
+      "domain": "Domain 4: Guidelines for Responsible AI",
+      "text": "Which characteristics should training datasets have for responsible AI? (Select THREE)",
+      "type": "multiple-response",
+      "options": [
+        "Inclusivity and diversity",
+        "Curation from trusted sources",
+        "Balance in representation across groups",
+        "Secrecy and limited transparency",
+        "Labeling with clear documentation"
+      ],
+      "correct": [0, 1, 2],
+      "explanation": "Responsible datasets should be inclusive, diverse, curated, balanced, and well-documented. Secrecy contradicts transparency best practices.",
+      "scored": true
+    },
+    {
+      "id": 41,
+      "domain": "Domain 4: Guidelines for Responsible AI",
+      "text": "What is the difference between transparency and explainability in AI models?",
+      "type": "multiple-choice",
+      "options": [
+        "They mean exactly the same thing",
+        "Transparency means the model is clear about data sources; explainability means we can understand the model's decisions",
+        "Explainability is for regulations; transparency is for performance",
+        "They apply only to image models"
+      ],
+      "correct": [1],
+      "explanation": "Transparency involves openness about model data and processes; explainability means understanding why the model made specific decisions. Both are important for responsible AI.",
+      "scored": true
+    },
+    {
+      "id": 42,
+      "domain": "Domain 4: Guidelines for Responsible AI",
+      "text": "Which AWS tools help detect and monitor bias in AI systems? (Select TWO)",
+      "type": "multiple-response",
+      "options": [
+        "Amazon SageMaker Clarify",
+        "SageMaker Model Monitor",
+        "Amazon S3",
+        "Amazon Bedrock PartyRock",
+        "AWS Lambda"
+      ],
+      "correct": [0, 1],
+      "explanation": "SageMaker Clarify and SageMaker Model Monitor are designed tools for detecting and monitoring bias. S3, PartyRock, and Lambda serve different purposes.",
+      "scored": true
+    },
+    {
+      "id": 43,
+      "domain": "Domain 4: Guidelines for Responsible AI",
+      "text": "What is Amazon Augmented AI (A2I) and why is it relevant to responsible AI?",
+      "type": "multiple-choice",
+      "options": [
+        "A tool to automate all human decision-making",
+        "A service that enables human review loops to audit and improve model predictions",
+        "A machine learning training service",
+        "A data encryption tool"
+      ],
+      "correct": [1],
+      "explanation": "Amazon A2I enables human-in-the-loop workflows where humans review and approve model predictions, which is crucial for responsible and trustworthy AI deployment.",
+      "scored": false
+    },
+    {
+      "id": 44,
+      "domain": "Domain 4: Guidelines for Responsible AI",
+      "text": "How do overfitting and underfitting affect model bias and fairness?",
+      "type": "multiple-choice",
+      "options": [
+        "They have no relationship to bias",
+        "Overfitting can amplify biases in training data; underfitting may miss important patterns affecting fairness",
+        "Only overfitting matters for bias",
+        "Only hardware configuration affects bias"
+      ],
+      "correct": [1],
+      "explanation": "Overfitting can overemphasize biases present in training data. Underfitting may miss patterns, potentially causing systematic unfairness to certain groups.",
+      "scored": true
+    },
+    {
+      "id": 45,
+      "domain": "Domain 4: Guidelines for Responsible AI",
+      "text": "What environmental considerations should be included in responsible model selection?",
+      "type": "multiple-choice",
+      "options": [
+        "Only cost",
+        "Energy consumption and carbon footprint of model training and inference",
+        "Only model accuracy",
+        "Only API response time"
+      ],
+      "correct": [1],
+      "explanation": "Responsible AI includes environmental sustainability considerations, including the energy consumption and carbon footprint of model training and deployment.",
+      "scored": true
+    },
+    {
+      "id": 46,
+      "domain": "Domain 5: Security, Compliance, and Governance for AI Solutions",
+      "text": "Which AWS services and features are used to secure AI systems? (Select THREE)",
+      "type": "multiple-response",
+      "options": [
+        "IAM roles, policies, and permissions",
+        "Data encryption (at rest and in transit)",
+        "Amazon Macie for data discovery",
+        "Amazon EC2 only",
+        "AWS PrivateLink"
+      ],
+      "correct": [0, 1, 2],
+      "explanation": "IAM, encryption, and Macie are security tools. PrivateLink is networking. EC2 is compute, not specifically for AI security.",
+      "scored": true
+    },
+    {
+      "id": 47,
+      "domain": "Domain 5: Security, Compliance, and Governance for AI Solutions",
+      "text": "What is source citation and data lineage in AI systems and why are they important?",
+      "type": "multiple-choice",
+      "options": [
+        "Just documentation requirements",
+        "Documenting where data originated and how it was processed, essential for transparency and compliance",
+        "Only for marketing purposes",
+        "Not relevant to security"
+      ],
+      "correct": [1],
+      "explanation": "Source citation and data lineage provide transparency about data origins and transformations, supporting responsible AI, compliance, and traceability.",
+      "scored": true
+    },
+    {
+      "id": 48,
+      "domain": "Domain 5: Security, Compliance, and Governance for AI Solutions",
+      "text": "What are best practices for secure data engineering in AI projects?",
+      "type": "multiple-choice",
+      "options": [
+        "Ignoring data quality issues to save time",
+        "Assessing data quality, implementing privacy-enhancing technologies, and enforcing access controls",
+        "Storing all data in public buckets",
+        "Avoiding encryption"
+      ],
+      "correct": [1],
+      "explanation": "Secure data engineering requires quality assessment, privacy technologies, access control, and data integrity measures to protect sensitive information.",
+      "scored": true
+    },
+    {
+      "id": 49,
+      "domain": "Domain 5: Security, Compliance, and Governance for AI Solutions",
+      "text": "Which of the following are security and privacy considerations for AI systems? (Select THREE)",
+      "type": "multiple-response",
+      "options": [
+        "Application security and threat detection",
+        "Vulnerability management",
+        "Prompt injection attacks",
+        "The CEO's coffee preferences",
+        "Encryption at rest and in transit"
+      ],
+      "correct": [0, 1, 2],
+      "explanation": "Security considerations include app security, threat detection, vulnerability management, prompt injection risks, and encryption. CEO preferences are irrelevant.",
+      "scored": true
+    },
+    {
+      "id": 50,
+      "domain": "Domain 5: Security, Compliance, and Governance for AI Solutions",
+      "text": "What AWS services help with governance and compliance in AI systems? (Select TWO)",
+      "type": "multiple-response",
+      "options": [
+        "AWS Config",
+        "AWS CloudTrail",
+        "Amazon Polly",
+        "Amazon Inspector",
+        "Amazon S3 (as a data store only)"
+      ],
+      "correct": [0, 3],
+      "explanation": "AWS Config and Amazon Inspector are governance/compliance tools. CloudTrail is logging. Polly is text-to-speech. S3 is storage.",
+      "scored": true
+    },
+    {
+      "id": 51,
+      "domain": "Domain 5: Security, Compliance, and Governance for AI Solutions",
+      "text": "What do SageMaker Model Cards provide?",
+      "type": "multiple-choice",
+      "options": [
+        "Payment for model usage",
+        "Documentation of model characteristics, performance, limitations, and intended use",
+        "Training data storage",
+        "API rate limits"
+      ],
+      "correct": [1],
+      "explanation": "SageMaker Model Cards document model characteristics, training data, performance metrics, limitations, and intended use cases for transparency.",
+      "scored": false
+    },
+    {
+      "id": 52,
+      "domain": "Domain 5: Security, Compliance, and Governance for AI Solutions",
+      "text": "What is a data governance strategy for AI systems and what does it include?",
+      "type": "multiple-choice",
+      "options": [
+        "Only storing data in one location",
+        "Management of data lifecycles, logging, residency, retention, and monitoring",
+        "Deleting all data daily",
+        "Avoiding documentation"
+      ],
+      "correct": [1],
+      "explanation": "Data governance includes managing data lifecycles, establishing logging/audit trails, ensuring compliance with data residency requirements, and monitoring data usage.",
+      "scored": true
+    },
+    {
+      "id": 53,
+      "domain": "Domain 5: Security, Compliance, and Governance for AI Solutions",
+      "text": "Which governance processes should be followed for AI solutions?",
+      "type": "multiple-choice",
+      "options": [
+        "None; move quickly to avoid delays",
+        "Establishing policies, review cadence, review strategies, governance frameworks, and team training",
+        "Only external audits",
+        "Only cost reviews"
+      ],
+      "correct": [1],
+      "explanation": "Proper governance includes establishing policies, regular review cadence, governance frameworks (like the Generative AI Security Scoping Matrix), and team training.",
+      "scored": true
+    },
+    {
+      "id": 54,
+      "domain": "Domain 1: Fundamentals of AI and ML",
+      "text": "What is the role of feature engineering in the ML development lifecycle?",
+      "type": "multiple-choice",
+      "options": [
+        "Creating the user interface",
+        "Selecting and transforming raw features to improve model performance",
+        "Deploying models to production",
+        "Monitoring model performance"
+      ],
+      "correct": [1],
+      "explanation": "Feature engineering involves selecting, creating, and transforming relevant features from raw data to improve model performance and predictive power.",
+      "scored": true
+    },
+    {
+      "id": 55,
+      "domain": "Domain 1: Fundamentals of AI and ML",
+      "text": "Describe the different types of ML model inference.",
+      "type": "multiple-choice",
+      "options": [
+        "Only real-time inference exists",
+        "Batch inference processes multiple records at once; real-time inference processes individual requests immediately",
+        "Inference and training are the same",
+        "Inference happens during training only"
+      ],
+      "correct": [1],
+      "explanation": "Batch inference processes multiple records efficiently (good for large datasets); real-time inference handles individual requests immediately (for on-demand predictions).",
+      "scored": true
+    },
+    {
+      "id": 56,
+      "domain": "Domain 2: Fundamentals of GenAI",
+      "text": "What are multimodal models in the context of generative AI?",
+      "type": "multiple-choice",
+      "options": [
+        "Models that only process text",
+        "Models that can process and generate multiple types of data (text, images, audio, video)",
+        "Models that use multiple servers",
+        "Models that are trained multiple times"
+      ],
+      "correct": [1],
+      "explanation": "Multimodal models process and generate multiple data types (text, images, audio, video), enabling more versatile AI applications.",
+      "scored": true
+    },
+    {
+      "id": 57,
+      "domain": "Domain 2: Fundamentals of GenAI",
+      "text": "What are diffusion models and what are they used for?",
+      "type": "multiple-choice",
+      "options": [
+        "Models for spreading information across networks",
+        "Deep learning models that generate images and other content by gradually denoising",
+        "Models for user authentication",
+        "Models for network traffic analysis"
+      ],
+      "correct": [1],
+      "explanation": "Diffusion models are generative models that create images and content by starting with noise and gradually refining it, used in image generation applications.",
+      "scored": false
+    },
+    {
+      "id": 58,
+      "domain": "Domain 3: Applications of Foundation Models",
+      "text": "What is the relationship between RAG and knowledge bases in foundation model applications?",
+      "type": "multiple-choice",
+      "options": [
+        "They are unrelated concepts",
+        "Knowledge bases store documents that RAG retrieves and provides as context to foundation models",
+        "RAG is only for text classification",
+        "Knowledge bases are deprecated"
+      ],
+      "correct": [1],
+      "explanation": "RAG retrieves relevant documents from knowledge bases and provides them as context to foundation models, enabling domain-specific Q&A without retraining.",
+      "scored": true
+    },
+    {
+      "id": 59,
+      "domain": "Domain 3: Applications of Foundation Models",
+      "text": "What is the impact of input/output length constraints on foundation model selection?",
+      "type": "multiple-choice",
+      "options": [
+        "No impact on selection",
+        "Different models have different maximum token limits; this affects their suitability for tasks with long documents or required outputs",
+        "All models handle unlimited tokens",
+        "Only costs are affected"
+      ],
+      "correct": [1],
+      "explanation": "Different foundation models have different input/output token limits. This is critical when selecting models for tasks requiring long context or detailed responses.",
+      "scored": true
+    },
+    {
+      "id": 60,
+      "domain": "Domain 3: Applications of Foundation Models",
+      "text": "What is prompt caching and what advantage does it provide?",
+      "type": "multiple-choice",
+      "options": [
+        "A method to delete prompts",
+        "Reusing previously processed prompt segments to reduce latency and costs",
+        "A type of prompt injection attack",
+        "Only for image generation"
+      ],
+      "correct": [1],
+      "explanation": "Prompt caching stores and reuses previously processed prompt segments, reducing processing latency and API costs for repeated queries.",
+      "scored": true
+    },
+    {
+      "id": 61,
+      "domain": "Domain 4: Guidelines for Responsible AI",
+      "text": "What does veracity mean in the context of responsible AI?",
+      "type": "multiple-choice",
+      "options": [
+        "The speed of model responses",
+        "The truthfulness and accuracy of model outputs",
+        "The cost of using the model",
+        "The number of users"
+      ],
+      "correct": [1],
+      "explanation": "Veracity refers to ensuring model outputs are truthful, accurate, and reliable, which is essential for building trust in AI systems.",
+      "scored": false
+    },
+    {
+      "id": 62,
+      "domain": "Domain 4: Guidelines for Responsible AI",
+      "text": "What is human-centered design in the context of explainable AI?",
+      "type": "multiple-choice",
+      "options": [
+        "Ignoring user needs",
+        "Designing AI explanations that users can understand and trust, centering on human usability",
+        "Automating all decisions without human input",
+        "Only for chatbots"
+      ],
+      "correct": [1],
+      "explanation": "Human-centered explainable AI design focuses on creating explanations that are understandable to users, supporting informed decision-making and trust.",
+      "scored": true
+    },
+    {
+      "id": 63,
+      "domain": "Domain 5: Security, Compliance, and Governance for AI Solutions",
+      "text": "What is the Generative AI Security Scoping Matrix and its purpose?",
+      "type": "multiple-choice",
+      "options": [
+        "A tool to increase model accuracy",
+        "A governance framework for systematically identifying and managing security risks in GenAI systems",
+        "A data storage solution",
+        "Only for compliance audits"
+      ],
+      "correct": [1],
+      "explanation": "The Generative AI Security Scoping Matrix is a governance framework that helps organizations systematically scope and manage security considerations in GenAI deployments.",
+      "scored": true
+    },
+    {
+      "id": 64,
+      "domain": "Domain 5: Security, Compliance, and Governance for AI Solutions",
+      "text": "Which compliance and governance tools does AWS provide? (Select THREE)",
+      "type": "multiple-response",
+      "options": [
+        "AWS Audit Manager",
+        "AWS Artifact",
+        "AWS CloudTrail",
+        "Amazon Polly",
+        "AWS Glue"
+      ],
+      "correct": [0, 1, 2],
+      "explanation": "AWS Audit Manager, AWS Artifact, and AWS CloudTrail are compliance/governance tools. Polly is text-to-speech; Glue is for data integration.",
+      "scored": true
+    },
+    {
+      "id": 65,
+      "domain": "Domain 5: Security, Compliance, and Governance for AI Solutions",
+      "text": "What is the AWS shared responsibility model and how does it apply to AI systems?",
+      "type": "multiple-choice",
+      "options": [
+        "AWS is responsible for all security",
+        "Customers are responsible for all security",
+        "AWS secures infrastructure; customers secure their data, access control, and application configuration",
+        "Security is not a shared responsibility"
+      ],
+      "correct": [2],
+      "explanation": "The AWS shared responsibility model divides security: AWS manages infrastructure/service security; customers manage data, access control, encryption keys, and application security.",
+      "scored": true
+    }
+  ]
+}

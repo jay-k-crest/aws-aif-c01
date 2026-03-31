@@ -1,0 +1,979 @@
+{
+  "examName": "AWS AIF-C01 Mock Exam - Advanced (Domain Weighted)",
+  "timeLimitMinutes": 90,
+  "passingScore": 700,
+  "domainWeights": {
+    "Fundamentals of AI and ML": 20,
+    "Fundamentals of GenAI": 24,
+    "Applications of Foundation Models": 28,
+    "Guidelines for Responsible AI": 14,
+    "Security, Compliance, and Governance for AI Solutions": 14
+  },
+  "questions": [
+    {
+      "id": 1,
+      "domain": "Fundamentals of AI and ML",
+      "text": "A data scientist is building a model to predict whether a customer will renew their subscription. The dataset has 10,000 rows with features like usage frequency, support tickets, and account age. The target is binary (renew = yes/no). Which algorithm type is most appropriate as a baseline?",
+      "type": "multiple-choice",
+      "options": [
+        "Linear regression",
+        "Logistic regression",
+        "K-means clustering",
+        "Principal component analysis"
+      ],
+      "correct": [1],
+      "explanation": "Logistic regression is the standard baseline for binary classification problems.",
+      "scored": true
+    },
+    {
+      "id": 2,
+      "domain": "Fundamentals of AI and ML",
+      "text": "A model trained to detect fraudulent transactions achieves 99% accuracy on the test set. However, the dataset had only 1% fraudulent transactions, and the model predicted 'not fraud' for every transaction. What is the primary issue?",
+      "type": "multiple-choice",
+      "options": [
+        "Overfitting to the minority class",
+        "Class imbalance masking poor recall",
+        "High variance in predictions",
+        "Insufficient feature engineering"
+      ],
+      "correct": [1],
+      "explanation": "In imbalanced datasets, accuracy is misleading. The model has 0% recall on the fraud class.",
+      "scored": true
+    },
+    {
+      "id": 3,
+      "domain": "Fundamentals of AI and ML",
+      "text": "Which of the following metrics would be MOST appropriate to evaluate a model for detecting rare diseases where false negatives are critical to avoid?",
+      "type": "multiple-choice",
+      "options": [
+        "Precision",
+        "Recall (Sensitivity)",
+        "Accuracy",
+        "F1 score"
+      ],
+      "correct": [1],
+      "explanation": "Recall measures how many actual positives were correctly identified. For rare diseases, missing a case (false negative) is dangerous.",
+      "scored": true
+    },
+    {
+      "id": 4,
+      "domain": "Fundamentals of AI and ML",
+      "text": "A model trained on historical sales data predicts next month's revenue as a continuous number. What type of machine learning problem is this?",
+      "type": "multiple-choice",
+      "options": [
+        "Binary classification",
+        "Multi-class classification",
+        "Regression",
+        "Clustering"
+      ],
+      "correct": [2],
+      "explanation": "Predicting a continuous numerical value (revenue) is regression.",
+      "scored": true
+    },
+    {
+      "id": 5,
+      "domain": "Fundamentals of AI and ML",
+      "text": "Which of the following describes the scenario where a model performs well on training data but poorly on unseen test data? (Select TWO)",
+      "type": "multiple-response",
+      "options": [
+        "Underfitting",
+        "Overfitting",
+        "High bias",
+        "High variance",
+        "Low variance"
+      ],
+      "correct": [1, 3],
+      "explanation": "Overfitting and high variance both describe models that memorize training data but fail to generalize.",
+      "scored": true
+    },
+    {
+      "id": 6,
+      "domain": "Fundamentals of AI and ML",
+      "text": "What is the purpose of a validation set in machine learning?",
+      "type": "multiple-choice",
+      "options": [
+        "To train the final model",
+        "To evaluate final model performance",
+        "To tune hyperparameters and select models",
+        "To store raw input data"
+      ],
+      "correct": [2],
+      "explanation": "The validation set is used during training to tune hyperparameters and select the best model.",
+      "scored": true
+    },
+    {
+      "id": 7,
+      "domain": "Fundamentals of AI and ML",
+      "text": "A team wants to group customers into segments based on purchasing behavior without predefined labels. Which approach should they use?",
+      "type": "multiple-choice",
+      "options": [
+        "Supervised classification",
+        "Regression analysis",
+        "Clustering",
+        "Reinforcement learning"
+      ],
+      "correct": [2],
+      "explanation": "Clustering is unsupervised learning used to find natural groupings without labels.",
+      "scored": true
+    },
+    {
+      "id": 8,
+      "domain": "Fundamentals of AI and ML",
+      "text": "Which of the following is an example of reinforcement learning?",
+      "type": "multiple-choice",
+      "options": [
+        "Grouping customers by purchase history",
+        "Predicting house prices from features",
+        "A game-playing AI that learns from wins and losses",
+        "Detecting spam emails from labeled examples"
+      ],
+      "correct": [2],
+      "explanation": "Reinforcement learning involves an agent learning through rewards and penalties from actions.",
+      "scored": true
+    },
+    {
+      "id": 9,
+      "domain": "Fundamentals of GenAI",
+      "text": "A company wants to generate realistic product descriptions for 10,000 items using existing catalog data. Which approach is MOST efficient?",
+      "type": "multiple-choice",
+      "options": [
+        "Hire writers to manually create descriptions",
+        "Train a custom CNN from scratch",
+        "Use a pre-trained LLM with few-shot prompting",
+        "Build a regression model on product attributes"
+      ],
+      "correct": [2],
+      "explanation": "Pre-trained LLMs with few-shot prompting are the most efficient for text generation tasks.",
+      "scored": true
+    },
+    {
+      "id": 10,
+      "domain": "Fundamentals of GenAI",
+      "text": "Which of the following are foundation model capabilities available through Amazon Bedrock? (Select TWO)",
+      "type": "multiple-response",
+      "options": [
+        "Text generation with Claude",
+        "Image generation with Titan Image",
+        "Video editing",
+        "3D model rendering",
+        "Blockchain transaction processing"
+      ],
+      "correct": [0, 1],
+      "explanation": "Bedrock offers Claude for text and Titan for image generation.",
+      "scored": true
+    },
+    {
+      "id": 11,
+      "domain": "Fundamentals of GenAI",
+      "text": "A developer is using Amazon Bedrock with a foundation model. They notice the model sometimes generates false information about company products. What is this phenomenon called?",
+      "type": "multiple-choice",
+      "options": [
+        "Model drift",
+        "Hallucination",
+        "Overfitting",
+        "Bias amplification"
+      ],
+      "correct": [1],
+      "explanation": "Hallucination occurs when generative models produce factually incorrect but confident-sounding information.",
+      "scored": true
+    },
+    {
+      "id": 12,
+      "domain": "Fundamentals of GenAI",
+      "text": "What is the primary difference between fine-tuning and retrieval-augmented generation (RAG)?",
+      "type": "multiple-choice",
+      "options": [
+        "Fine-tuning modifies model weights; RAG injects context without changing weights",
+        "RAG requires more data than fine-tuning",
+        "Fine-tuning is only for images; RAG is for text",
+        "There is no difference; they are the same"
+      ],
+      "correct": [0],
+      "explanation": "Fine-tuning updates model weights; RAG retrieves relevant context and injects it into the prompt without retraining.",
+      "scored": true
+    },
+    {
+      "id": 13,
+      "domain": "Fundamentals of GenAI",
+      "text": "Which Bedrock feature allows you to define denied topics (e.g., 'do not discuss competitor products') and block harmful content?",
+      "type": "multiple-choice",
+      "options": [
+        "Knowledge Bases",
+        "Agents",
+        "Guardrails",
+        "Model Evaluation"
+      ],
+      "correct": [2],
+      "explanation": "Guardrails provide configurable safeguards including denied topics and content filtering.",
+      "scored": true
+    },
+    {
+      "id": 14,
+      "domain": "Applications of Foundation Models",
+      "text": "A company wants to build a Q&A system over 10,000 internal PDF documents without retraining the foundation model. Which Bedrock feature should they use?",
+      "type": "multiple-choice",
+      "options": [
+        "Fine-tuning",
+        "Knowledge Bases (RAG)",
+        "Agents",
+        "Guardrails"
+      ],
+      "correct": [1],
+      "explanation": "Knowledge Bases enable RAG — retrieving relevant documents and providing them as context without fine-tuning.",
+      "scored": true
+    },
+    {
+      "id": 15,
+      "domain": "Applications of Foundation Models",
+      "text": "A developer wants to create a workflow where an LLM can check order status by calling a company API. Which Bedrock feature enables this?",
+      "type": "multiple-choice",
+      "options": [
+        "Knowledge Bases",
+        "Guardrails",
+        "Agents",
+        "Model Evaluation"
+      ],
+      "correct": [2],
+      "explanation": "Agents allow foundation models to take actions by integrating with APIs and business systems.",
+      "scored": true
+    },
+    {
+      "id": 16,
+      "domain": "Applications of Foundation Models",
+      "text": "Which combination of services would you use to build a voice-based customer support bot that can retrieve account information from a database?",
+      "type": "multiple-choice",
+      "options": [
+        "Amazon Transcribe + Amazon Polly + AWS Lambda",
+        "Amazon Lex + Amazon Polly + AWS Lambda",
+        "Amazon Lex + Amazon Comprehend + Amazon S3",
+        "Amazon Transcribe + Amazon Rekognition + Amazon DynamoDB"
+      ],
+      "correct": [1],
+      "explanation": "Lex handles conversation (including speech input), Polly provides speech output, and Lambda handles backend integration.",
+      "scored": true
+    },
+    {
+      "id": 17,
+      "domain": "Applications of Foundation Models",
+      "text": "A financial firm needs to extract data from thousands of scanned mortgage applications. The documents contain handwritten text, tables, and signatures. Which service should they use FIRST?",
+      "type": "multiple-choice",
+      "options": [
+        "Amazon Comprehend",
+        "Amazon Textract",
+        "Amazon Rekognition",
+        "Amazon Kendra"
+      ],
+      "correct": [1],
+      "explanation": "Textract extracts text, handwriting, tables, and form data from scanned documents.",
+      "scored": true
+    },
+    {
+      "id": 18,
+      "domain": "Applications of Foundation Models",
+      "text": "After extracting text from scanned documents using Textract, a company wants to detect personally identifiable information (PII) like names and SSNs. Which service should they use?",
+      "type": "multiple-choice",
+      "options": [
+        "Amazon Rekognition",
+        "Amazon Comprehend",
+        "Amazon Polly",
+        "Amazon Translate"
+      ],
+      "correct": [1],
+      "explanation": "Amazon Comprehend detects and redacts PII from text.",
+      "scored": true
+    },
+    {
+      "id": 19,
+      "domain": "Applications of Foundation Models",
+      "text": "A global company receives support tickets in 20 languages. They want to route tickets to English-speaking agents. Which services are required? (Select TWO)",
+      "type": "multiple-response",
+      "options": [
+        "Amazon Comprehend (language detection)",
+        "Amazon Translate",
+        "Amazon Polly",
+        "Amazon Transcribe",
+        "Amazon Textract"
+      ],
+      "correct": [0, 1],
+      "explanation": "Comprehend detects the language, Translate converts to English.",
+      "scored": true
+    },
+    {
+      "id": 20,
+      "domain": "Applications of Foundation Models",
+      "text": "A company wants to build a search engine that allows employees to ask natural language questions like 'Show me Q3 financial reports with revenue growth > 10%'. Which service is purpose-built for this?",
+      "type": "multiple-choice",
+      "options": [
+        "Amazon OpenSearch",
+        "Amazon Kendra",
+        "Amazon RDS",
+        "Amazon DynamoDB"
+      ],
+      "correct": [1],
+      "explanation": "Kendra provides intelligent enterprise search with natural language understanding.",
+      "scored": true
+    },
+    {
+      "id": 21,
+      "domain": "Applications of Foundation Models",
+      "text": "When would you choose Amazon Personalize over building a custom recommendation model in SageMaker?",
+      "type": "multiple-choice",
+      "options": [
+        "When you need complete control over the algorithm",
+        "When you want a fully managed service with built-in recommendation algorithms",
+        "When you need to train on images",
+        "When you need real-time inference only"
+      ],
+      "correct": [1],
+      "explanation": "Personalize is purpose-built, fully managed, and optimized for recommendations without custom ML development.",
+      "scored": true
+    },
+    {
+      "id": 22,
+      "domain": "Applications of Foundation Models",
+      "text": "A developer is using Bedrock with a prompt: 'Translate this to French: Hello, how are you?' What type of prompting is this?",
+      "type": "multiple-choice",
+      "options": [
+        "Zero-shot",
+        "Few-shot",
+        "Chain-of-thought",
+        "Role-based"
+      ],
+      "correct": [0],
+      "explanation": "Zero-shot prompting gives the task without examples.",
+      "scored": true
+    },
+    {
+      "id": 23,
+      "domain": "Applications of Foundation Models",
+      "text": "A prompt includes: 'Question: What is the capital of France? Answer: Paris. Question: What is the capital of Germany? Answer: Berlin. Question: What is the capital of Japan? Answer:' This demonstrates which technique?",
+      "type": "multiple-choice",
+      "options": [
+        "Zero-shot",
+        "Few-shot",
+        "Chain-of-thought",
+        "Role-based"
+      ],
+      "correct": [1],
+      "explanation": "Few-shot provides examples of the desired input-output format.",
+      "scored": true
+    },
+    {
+      "id": 24,
+      "domain": "Guidelines for Responsible AI",
+      "text": "An AI model for loan approvals consistently denies applications from a specific postal code. Investigation shows the postal code has a high concentration of minority residents. Which Responsible AI principle is being violated?",
+      "type": "multiple-choice",
+      "options": [
+        "Explainability",
+        "Fairness",
+        "Privacy",
+        "Robustness"
+      ],
+      "correct": [1],
+      "explanation": "Fairness ensures models do not discriminate based on protected characteristics.",
+      "scored": true
+    },
+    {
+      "id": 25,
+      "domain": "Guidelines for Responsible AI",
+      "text": "A bank needs to explain to regulators why a loan was denied. Which capability helps with this?",
+      "type": "multiple-choice",
+      "options": [
+        "Model fairness metrics",
+        "Explainability (SHAP, feature importance)",
+        "Data encryption",
+        "Model drift detection"
+      ],
+      "correct": [1],
+      "explanation": "Explainability tools like SHAP or SageMaker Clarify help interpret model decisions.",
+      "scored": true
+    },
+    {
+      "id": 26,
+      "domain": "Guidelines for Responsible AI",
+      "text": "Which AWS service helps detect bias in ML models and provides explainability?",
+      "type": "multiple-choice",
+      "options": [
+        "SageMaker Model Monitor",
+        "SageMaker Clarify",
+        "SageMaker Experiments",
+        "SageMaker Debugger"
+      ],
+      "correct": [1],
+      "explanation": "SageMaker Clarify detects bias and provides explainability (feature importance, SHAP).",
+      "scored": true
+    },
+    {
+      "id": 27,
+      "domain": "Guidelines for Responsible AI",
+      "text": "Which of the following are GenAI-specific security risks? (Select TWO)",
+      "type": "multiple-response",
+      "options": [
+        "SQL injection",
+        "Prompt injection",
+        "Data exfiltration via model outputs",
+        "DDoS attacks",
+        "Cross-site scripting"
+      ],
+      "correct": [1, 2],
+      "explanation": "Prompt injection and data exfiltration through model outputs are unique GenAI risks.",
+      "scored": true
+    },
+    {
+      "id": 28,
+      "domain": "Guidelines for Responsible AI",
+      "text": "What does RLHF (Reinforcement Learning from Human Feedback) primarily address?",
+      "type": "multiple-choice",
+      "options": [
+        "Model performance on unseen data",
+        "Aligning model outputs with human preferences",
+        "Reducing model size",
+        "Improving training speed"
+      ],
+      "correct": [1],
+      "explanation": "RLHF uses human feedback to align model behavior with human preferences and values.",
+      "scored": true
+    },
+    {
+      "id": 29,
+      "domain": "Guidelines for Responsible AI",
+      "text": "A company wants to ensure their generative AI chatbot does not produce harmful content. Which Bedrock feature should they configure?",
+      "type": "multiple-choice",
+      "options": [
+        "Knowledge Bases",
+        "Guardrails",
+        "Agents",
+        "Model Evaluation"
+      ],
+      "correct": [1],
+      "explanation": "Guardrails provide configurable filters for harmful content and denied topics.",
+      "scored": true
+    },
+    {
+      "id": 30,
+      "domain": "Security, Compliance, and Governance for AI Solutions",
+      "text": "An EC2 instance needs to access an S3 bucket for training data. The admin wants to avoid storing long-term credentials on the instance. What should they do?",
+      "type": "multiple-choice",
+      "options": [
+        "Create an IAM user and store access keys in a file",
+        "Attach an IAM role to the EC2 instance",
+        "Make the S3 bucket public",
+        "Store credentials in environment variables"
+      ],
+      "correct": [1],
+      "explanation": "IAM roles provide temporary credentials to EC2 instances securely.",
+      "scored": true
+    },
+    {
+      "id": 31,
+      "domain": "Security, Compliance, and Governance for AI Solutions",
+      "text": "Which AWS service records API activity for auditing and compliance in AI workflows?",
+      "type": "multiple-choice",
+      "options": [
+        "Amazon CloudWatch",
+        "AWS CloudTrail",
+        "AWS Config",
+        "Amazon GuardDuty"
+      ],
+      "correct": [1],
+      "explanation": "CloudTrail records API calls for auditing, security analysis, and compliance.",
+      "scored": true
+    },
+    {
+      "id": 32,
+      "domain": "Security, Compliance, and Governance for AI Solutions",
+      "text": "A security team wants to automatically discover and protect sensitive data (like credit card numbers) stored in S3 buckets. Which service should they use?",
+      "type": "multiple-choice",
+      "options": [
+        "Amazon Inspector",
+        "AWS Config",
+        "Amazon Macie",
+        "AWS Trusted Advisor"
+      ],
+      "correct": [2],
+      "explanation": "Amazon Macie uses ML to discover and protect sensitive data in S3.",
+      "scored": true
+    },
+    {
+      "id": 33,
+      "domain": "Security, Compliance, and Governance for AI Solutions",
+      "text": "Which AWS service provides self-service access to AWS compliance reports (SOC, PCI, etc.)?",
+      "type": "multiple-choice",
+      "options": [
+        "AWS Config",
+        "AWS Artifact",
+        "AWS Audit Manager",
+        "AWS Trusted Advisor"
+      ],
+      "correct": [1],
+      "explanation": "AWS Artifact provides on-demand access to AWS compliance reports and agreements.",
+      "scored": true
+    },
+    {
+      "id": 34,
+      "domain": "Security, Compliance, and Governance for AI Solutions",
+      "text": "A company wants to track changes to S3 bucket policies over time and ensure compliance with security standards. Which service should they use?",
+      "type": "multiple-choice",
+      "options": [
+        "Amazon CloudWatch",
+        "AWS Config",
+        "Amazon Inspector",
+        "AWS Shield"
+      ],
+      "correct": [1],
+      "explanation": "AWS Config tracks resource configurations and evaluates compliance against desired policies.",
+      "scored": true
+    },
+    {
+      "id": 35,
+      "domain": "Security, Compliance, and Governance for AI Solutions",
+      "text": "Which of the following are IAM best practices? (Select TWO)",
+      "type": "multiple-response",
+      "options": [
+        "Use root user for daily tasks",
+        "Enable MFA for privileged users",
+        "Grant least privilege permissions",
+        "Share access keys across team members",
+        "Store access keys in public repositories"
+      ],
+      "correct": [1, 2],
+      "explanation": "MFA and least privilege are core IAM security best practices.",
+      "scored": true
+    },
+    {
+      "id": 36,
+      "domain": "Security, Compliance, and Governance for AI Solutions",
+      "text": "A company using Bedrock wants to audit which users invoked which foundation models. Which service provides this information?",
+      "type": "multiple-choice",
+      "options": [
+        "Amazon CloudWatch",
+        "AWS CloudTrail",
+        "Amazon GuardDuty",
+        "AWS Trusted Advisor"
+      ],
+      "correct": [1],
+      "explanation": "CloudTrail records all Bedrock API calls including who invoked which model.",
+      "scored": true
+    },
+    {
+      "id": 37,
+      "domain": "Fundamentals of AI and ML",
+      "text": "What is the primary purpose of MLOps?",
+      "type": "multiple-choice",
+      "options": [
+        "Writing ML algorithms",
+        "Automating the ML lifecycle (CI/CD, monitoring, governance)",
+        "Creating labeled datasets",
+        "Securing IAM roles"
+      ],
+      "correct": [1],
+      "explanation": "MLOps automates and operationalizes the end-to-end ML lifecycle.",
+      "scored": true
+    },
+    {
+      "id": 38,
+      "domain": "Applications of Foundation Models",
+      "text": "Which combination of services would you use to process a scanned PDF containing handwritten notes, extract the text, and translate it from Spanish to English?",
+      "type": "multiple-choice",
+      "options": [
+        "Amazon Textract + Amazon Translate",
+        "Amazon Rekognition + Amazon Polly",
+        "Amazon Comprehend + Amazon Transcribe",
+        "Amazon Lex + Amazon Translate"
+      ],
+      "correct": [0],
+      "explanation": "Textract extracts text (including handwriting), Translate translates the extracted text.",
+      "scored": true
+    },
+    {
+      "id": 39,
+      "domain": "Fundamentals of GenAI",
+      "text": "A team wants to compare Claude, Llama, and Titan models on accuracy and toxicity before selecting one for production. Which Bedrock feature should they use?",
+      "type": "multiple-choice",
+      "options": [
+        "Knowledge Bases",
+        "Agents",
+        "Model Evaluation",
+        "Guardrails"
+      ],
+      "correct": [2],
+      "explanation": "Bedrock Model Evaluation allows comparing foundation models on multiple metrics.",
+      "scored": true
+    },
+    {
+      "id": 40,
+      "domain": "Applications of Foundation Models",
+      "text": "A media company wants to convert their podcast library (audio files) into searchable text transcripts. Which service should they use?",
+      "type": "multiple-choice",
+      "options": [
+        "Amazon Polly",
+        "Amazon Transcribe",
+        "Amazon Comprehend",
+        "Amazon Lex"
+      ],
+      "correct": [1],
+      "explanation": "Transcribe converts speech to text from audio files.",
+      "scored": true
+    },
+    {
+      "id": 41,
+      "domain": "Applications of Foundation Models",
+      "text": "A company wants to generate realistic human-like voices for their audiobook production. Which service should they use?",
+      "type": "multiple-choice",
+      "options": [
+        "Amazon Transcribe",
+        "Amazon Polly",
+        "Amazon Lex",
+        "Amazon Rekognition"
+      ],
+      "correct": [1],
+      "explanation": "Polly converts text to lifelike speech.",
+      "scored": true
+    },
+    {
+      "id": 42,
+      "domain": "Guidelines for Responsible AI",
+      "text": "What is the purpose of SageMaker Model Monitor?",
+      "type": "multiple-choice",
+      "options": [
+        "To detect bias in training data",
+        "To monitor deployed models for data drift and quality issues",
+        "To track training experiments",
+        "To create labeled datasets"
+      ],
+      "correct": [1],
+      "explanation": "Model Monitor detects drift in data, predictions, and model quality after deployment.",
+      "scored": true
+    },
+    {
+      "id": 43,
+      "domain": "Security, Compliance, and Governance for AI Solutions",
+      "text": "Which AWS service helps automate evidence collection for audits?",
+      "type": "multiple-choice",
+      "options": [
+        "AWS Config",
+        "AWS Audit Manager",
+        "AWS CloudTrail",
+        "AWS Artifact"
+      ],
+      "correct": [1],
+      "explanation": "AWS Audit Manager automates evidence collection and helps prepare for audits.",
+      "scored": true
+    },
+    {
+      "id": 44,
+      "domain": "Fundamentals of AI and ML",
+      "text": "What is the difference between a hyperparameter and a model parameter?",
+      "type": "multiple-choice",
+      "options": [
+        "Hyperparameters are set before training; model parameters are learned during training",
+        "Model parameters are set before training; hyperparameters are learned",
+        "They are the same thing",
+        "Hyperparameters are only used in neural networks"
+      ],
+      "correct": [0],
+      "explanation": "Hyperparameters (e.g., learning rate) are set before training; model parameters (e.g., weights) are learned.",
+      "scored": true
+    },
+    {
+      "id": 45,
+      "domain": "Applications of Foundation Models",
+      "text": "When would you use Amazon Forecast instead of building a custom time-series model in SageMaker?",
+      "type": "multiple-choice",
+      "options": [
+        "When you need full control over the algorithm",
+        "When you want a fully managed service purpose-built for forecasting",
+        "When you need image recognition",
+        "When you need real-time recommendations"
+      ],
+      "correct": [1],
+      "explanation": "Forecast is purpose-built for time-series forecasting with minimal ML expertise.",
+      "scored": true
+    },
+    {
+      "id": 46,
+      "domain": "Fundamentals of GenAI",
+      "text": "Which of the following is a key characteristic of foundation models?",
+      "type": "multiple-choice",
+      "options": [
+        "They are trained on a specific narrow task",
+        "They are pre-trained on broad data and can be adapted to many tasks",
+        "They cannot be fine-tuned",
+        "They only work with text data"
+      ],
+      "correct": [1],
+      "explanation": "Foundation models are pre-trained on broad data and can be adapted to various downstream tasks.",
+      "scored": true
+    },
+    {
+      "id": 47,
+      "domain": "Guidelines for Responsible AI",
+      "text": "A company deploys an AI model that performs well in production for 6 months, then gradually becomes less accurate due to changing customer behavior. This is an example of:",
+      "type": "multiple-choice",
+      "options": [
+        "Overfitting",
+        "Model drift",
+        "Hallucination",
+        "Bias amplification"
+      ],
+      "correct": [1],
+      "explanation": "Model drift occurs when the real-world data distribution changes over time.",
+      "scored": true
+    },
+    {
+      "id": 48,
+      "domain": "Security, Compliance, and Governance for AI Solutions",
+      "text": "What does the AWS Shared Responsibility Model state for AI services?",
+      "type": "multiple-choice",
+      "options": [
+        "AWS is responsible for everything",
+        "Customer is responsible for everything",
+        "AWS secures the AI service infrastructure; customer secures their data, prompts, and configurations",
+        "Security is automatically handled by AI"
+      ],
+      "correct": [2],
+      "explanation": "AWS secures the infrastructure; customers secure their data, access controls, and configurations.",
+      "scored": true
+    },
+    {
+      "id": 49,
+      "domain": "Applications of Foundation Models",
+      "text": "Place the steps for building a RAG application with Bedrock Knowledge Bases in the correct order: 1. Query knowledge base, 2. Ingest documents, 3. Create knowledge base, 4. Configure data source from S3",
+      "type": "ordering",
+      "options": [
+        "Create knowledge base",
+        "Configure data source",
+        "Ingest documents",
+        "Query knowledge base"
+      ],
+      "correct": [0, 1, 2, 3],
+      "explanation": "First create the knowledge base, configure the data source, ingest documents, then query.",
+      "scored": true
+    },
+    {
+      "id": 50,
+      "domain": "Fundamentals of AI and ML",
+      "text": "A model for predicting customer churn has high precision but low recall. What does this mean?",
+      "type": "multiple-choice",
+      "options": [
+        "When it predicts churn, it's usually correct, but it misses many actual churn cases",
+        "It predicts churn for almost all customers",
+        "It never predicts churn",
+        "It has high accuracy overall"
+      ],
+      "correct": [0],
+      "explanation": "High precision means few false positives; low recall means many false negatives (missed churn).",
+      "scored": true
+    },
+    {
+      "id": 51,
+      "domain": "Applications of Foundation Models",
+      "text": "A company wants to add a human review step for low-confidence document extractions. Which service should they use?",
+      "type": "multiple-choice",
+      "options": [
+        "Amazon Mechanical Turk",
+        "Amazon Augmented AI (A2I)",
+        "SageMaker Ground Truth",
+        "Amazon Rekognition"
+      ],
+      "correct": [1],
+      "explanation": "A2I adds human review workflows to AI predictions, especially for low-confidence results.",
+      "scored": true
+    },
+    {
+      "id": 52,
+      "domain": "Fundamentals of GenAI",
+      "text": "What is the primary benefit of using prompt templates?",
+      "type": "multiple-choice",
+      "options": [
+        "They reduce model hallucinations",
+        "They provide reusable, consistent prompts with placeholders",
+        "They automatically fine-tune the model",
+        "They eliminate the need for guardrails"
+      ],
+      "correct": [1],
+      "explanation": "Prompt templates provide reusable structures with placeholders for variables, ensuring consistency.",
+      "scored": true
+    },
+    {
+      "id": 53,
+      "domain": "Security, Compliance, and Governance for AI Solutions",
+      "text": "Which AWS service helps identify security vulnerabilities in EC2 instances running ML workloads?",
+      "type": "multiple-choice",
+      "options": [
+        "AWS Config",
+        "Amazon Inspector",
+        "Amazon Macie",
+        "AWS Trusted Advisor"
+      ],
+      "correct": [1],
+      "explanation": "Amazon Inspector scans for software vulnerabilities and unintended network exposure.",
+      "scored": true
+    },
+    {
+      "id": 54,
+      "domain": "Applications of Foundation Models",
+      "text": "A developer wants to build an application where users can describe an app they need in plain English, and the system generates a simple working app. Which Amazon Q feature supports this?",
+      "type": "multiple-choice",
+      "options": [
+        "Amazon Q Business",
+        "Amazon Q Developer",
+        "Amazon Q Apps",
+        "Amazon Q for AWS Services"
+      ],
+      "correct": [2],
+      "explanation": "Amazon Q Apps allows users to build lightweight applications from natural language descriptions.",
+      "scored": true
+    },
+    {
+      "id": 55,
+      "domain": "Fundamentals of AI and ML",
+      "text": "What is the purpose of SageMaker Experiments?",
+      "type": "multiple-choice",
+      "options": [
+        "To monitor deployed models",
+        "To track and compare training runs, hyperparameters, and metrics",
+        "To detect bias in models",
+        "To create labeled datasets"
+      ],
+      "correct": [1],
+      "explanation": "SageMaker Experiments tracks training runs, hyperparameters, metrics, and artifacts.",
+      "scored": true
+    },
+    {
+      "id": 56,
+      "domain": "Applications of Foundation Models",
+      "text": "Which of the following are use cases for Amazon Rekognition? (Select TWO)",
+      "type": "multiple-response",
+      "options": [
+        "Content moderation of images",
+        "Speech-to-text conversion",
+        "Facial recognition",
+        "Language translation",
+        "Document text extraction"
+      ],
+      "correct": [0, 2],
+      "explanation": "Rekognition handles image/video analysis including content moderation and facial recognition.",
+      "scored": true
+    },
+    {
+      "id": 57,
+      "domain": "Guidelines for Responsible AI",
+      "text": "What is the purpose of SageMaker Debugger?",
+      "type": "multiple-choice",
+      "options": [
+        "To monitor deployed models for drift",
+        "To debug training jobs by monitoring gradients and activations",
+        "To detect bias in models",
+        "To create labeled datasets"
+      ],
+      "correct": [1],
+      "explanation": "SageMaker Debugger identifies training issues like vanishing gradients, overfitting, and slow training.",
+      "scored": true
+    },
+    {
+      "id": 58,
+      "domain": "Security, Compliance, and Governance for AI Solutions",
+      "text": "Which service provides recommendations on cost optimization, security, and performance for AWS accounts?",
+      "type": "multiple-choice",
+      "options": [
+        "AWS Trusted Advisor",
+        "AWS Config",
+        "Amazon Inspector",
+        "AWS Audit Manager"
+      ],
+      "correct": [0],
+      "explanation": "AWS Trusted Advisor provides best practice recommendations across cost, security, performance, and fault tolerance.",
+      "scored": true
+    },
+    {
+      "id": 59,
+      "domain": "Fundamentals of GenAI",
+      "text": "A prompt asks the model to 'explain your reasoning step by step before providing the final answer.' Which technique is this?",
+      "type": "multiple-choice",
+      "options": [
+        "Zero-shot",
+        "Few-shot",
+        "Chain-of-thought",
+        "Role-based"
+      ],
+      "correct": [2],
+      "explanation": "Chain-of-thought prompting asks the model to reason step by step before answering.",
+      "scored": true
+    },
+    {
+      "id": 60,
+      "domain": "Applications of Foundation Models",
+      "text": "A company needs to forecast inventory demand for 10,000 SKUs with seasonal patterns. Which service is most appropriate?",
+      "type": "multiple-choice",
+      "options": [
+        "Amazon Personalize",
+        "Amazon Forecast",
+        "Amazon SageMaker",
+        "Amazon Kendra"
+      ],
+      "correct": [1],
+      "explanation": "Amazon Forecast is purpose-built for time-series forecasting at scale.",
+      "scored": true
+    },
+    {
+      "id": 61,
+      "domain": "Fundamentals of AI and ML",
+      "text": "Match each ML concept to its description: 1. Supervised learning, 2. Unsupervised learning, 3. Reinforcement learning, 4. Self-supervised learning",
+      "type": "matching",
+      "leftItems": ["Supervised learning", "Unsupervised learning", "Reinforcement learning", "Self-supervised learning"],
+      "rightItems": ["Learning from labeled examples", "Finding patterns in unlabeled data", "Learning from rewards/penalties", "Learning from pretext tasks on unlabeled data"],
+      "correct": [0, 1, 2, 3],
+      "explanation": "Supervised uses labels; unsupervised finds patterns; RL uses rewards; self-supervised creates pretext tasks.",
+      "scored": true
+    },
+    {
+      "id": 62,
+      "domain": "Applications of Foundation Models",
+      "text": "Match each AWS service to its primary use: 1. Amazon Kendra, 2. Amazon Lex, 3. Amazon Polly, 4. Amazon Transcribe",
+      "type": "matching",
+      "leftItems": ["Amazon Kendra", "Amazon Lex", "Amazon Polly", "Amazon Transcribe"],
+      "rightItems": ["Intelligent enterprise search", "Conversational AI/chatbots", "Text-to-speech", "Speech-to-text"],
+      "correct": [0, 1, 2, 3],
+      "explanation": "Kendra = search, Lex = chatbots, Polly = text-to-speech, Transcribe = speech-to-text.",
+      "scored": true
+    },
+    {
+      "id": 63,
+      "domain": "Guidelines for Responsible AI",
+      "text": "Match each Responsible AI pillar to its definition: 1. Fairness, 2. Explainability, 3. Robustness, 4. Privacy",
+      "type": "matching",
+      "leftItems": ["Fairness", "Explainability", "Robustness", "Privacy"],
+      "rightItems": ["No discrimination against protected groups", "Understanding why a model made a decision", "Performs well under changing conditions", "Protects sensitive data"],
+      "correct": [0, 1, 2, 3],
+      "explanation": "Fairness = no bias; Explainability = interpretability; Robustness = reliability; Privacy = data protection.",
+      "scored": true
+    },
+    {
+      "id": 64,
+      "domain": "Security, Compliance, and Governance for AI Solutions",
+      "text": "Match each AWS service to its security function: 1. AWS CloudTrail, 2. Amazon Macie, 3. AWS Config, 4. Amazon Inspector",
+      "type": "matching",
+      "leftItems": ["AWS CloudTrail", "Amazon Macie", "AWS Config", "Amazon Inspector"],
+      "rightItems": ["API activity audit log", "Sensitive data discovery in S3", "Resource configuration compliance", "Vulnerability scanning"],
+      "correct": [0, 1, 2, 3],
+      "explanation": "CloudTrail = audit, Macie = sensitive data, Config = compliance, Inspector = vulnerabilities.",
+      "scored": true
+    },
+    {
+      "id": 65,
+      "domain": "Applications of Foundation Models",
+      "text": "Place the steps for fine-tuning a foundation model in Bedrock in order: 1. Evaluate model, 2. Select base model, 3. Prepare training data, 4. Start fine-tuning job",
+      "type": "ordering",
+      "options": [
+        "Select base model",
+        "Prepare training data",
+        "Start fine-tuning job",
+        "Evaluate model"
+      ],
+      "correct": [0, 1, 2, 3],
+      "explanation": "Select model first, prepare data, start fine-tuning, then evaluate the fine-tuned model.",
+      "scored": true
+    }
+  ]
+}

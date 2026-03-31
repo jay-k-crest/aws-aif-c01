@@ -1,0 +1,920 @@
+{
+  "examName": "AWS AIF-C01 Mock Exam - Full Coverage",
+  "timeLimitMinutes": 90,
+  "passingScore": 700,
+  "questions": [
+    {
+      "id": 1,
+      "text": "Which AWS service provides a unified interface to access foundation models from Amazon, Anthropic, Meta, and others, with features like guardrails and knowledge bases?",
+      "type": "multiple-choice",
+      "options": [
+        "Amazon SageMaker",
+        "AWS Lambda",
+        "Amazon Bedrock",
+        "Amazon Comprehend"
+      ],
+      "correct": [2],
+      "explanation": "Amazon Bedrock is the fully managed service that provides access to multiple foundation models and includes Guardrails, Knowledge Bases, and Agents.",
+      "scored": true
+    },
+    {
+      "id": 2,
+      "text": "A company wants to build a conversational AI assistant that can understand customer inquiries, maintain context, and handle follow-up questions naturally. Which AWS service is most suitable?",
+      "type": "multiple-choice",
+      "options": [
+        "Amazon Rekognition",
+        "Amazon Lex",
+        "Amazon Forecast",
+        "AWS DeepRacer"
+      ],
+      "correct": [1],
+      "explanation": "Amazon Lex powers conversational interfaces with natural language understanding and context management.",
+      "scored": true
+    },
+    {
+      "id": 3,
+      "text": "Which of the following are foundation model families available in Amazon Bedrock? (Select TWO)",
+      "type": "multiple-response",
+      "options": [
+        "Claude (Anthropic)",
+        "GPT-4 (OpenAI)",
+        "Llama (Meta)",
+        "Gemini (Google)",
+        "BERT (Google)"
+      ],
+      "correct": [0, 2],
+      "explanation": "Claude and Llama are available in Bedrock. GPT-4 and Gemini are not currently available in Bedrock.",
+      "scored": true
+    },
+    {
+      "id": 4,
+      "text": "Place the following steps for setting up a Knowledge Base (RAG) in Amazon Bedrock in the correct order: 1. Create vector index, 2. Query knowledge base, 3. Ingest documents from S3, 4. Create knowledge base and configure data source",
+      "type": "ordering",
+      "options": [
+        "Create knowledge base",
+        "Create vector index",
+        "Ingest documents",
+        "Query"
+      ],
+      "correct": [0, 1, 2, 3],
+      "explanation": "First create the knowledge base, then create/configure the vector index, ingest documents, then query.",
+      "scored": true
+    },
+    {
+      "id": 5,
+      "text": "Which prompt engineering technique assigns a persona or role to the model (e.g., 'You are a senior financial analyst')?",
+      "type": "multiple-choice",
+      "options": [
+        "Zero-shot prompting",
+        "Few-shot prompting",
+        "Chain-of-thought prompting",
+        "Role-based prompting"
+      ],
+      "correct": [3],
+      "explanation": "Role-based prompting assigns a specific persona to guide the model's responses.",
+      "scored": true
+    },
+    {
+      "id": 6,
+      "text": "A company wants to automatically categorize customer support emails by topic (billing, technical issue, account question) and prioritize urgent ones. Which AWS service can perform this text classification?",
+      "type": "multiple-choice",
+      "options": [
+        "Amazon Textract",
+        "Amazon Comprehend",
+        "Amazon Translate",
+        "Amazon Forecast"
+      ],
+      "correct": [1],
+      "explanation": "Amazon Comprehend provides custom classification for text documents.",
+      "scored": true
+    },
+    {
+      "id": 7,
+      "text": "Which of the following are benefits of Amazon Bedrock Guardrails? (Select TWO)",
+      "type": "multiple-response",
+      "options": [
+        "Block harmful content and deny specific topics",
+        "Automatically fine-tune models on new data",
+        "Apply safety policies consistently across multiple foundation models",
+        "Create vector embeddings for RAG",
+        "Deploy models to edge devices"
+      ],
+      "correct": [0, 2],
+      "explanation": "Guardrails provide safety controls and can be applied consistently across different models.",
+      "scored": true
+    },
+    {
+      "id": 8,
+      "text": "A developer is using Amazon Bedrock and notices the model is generating inconsistent responses. They want to make output more predictable for extracting customer names and order IDs. Which technique is most appropriate?",
+      "type": "multiple-choice",
+      "options": [
+        "Zero-shot prompting",
+        "Few-shot prompting with examples",
+        "Chain-of-thought prompting",
+        "Role-based prompting"
+      ],
+      "correct": [1],
+      "explanation": "Few-shot prompting provides examples of the desired output format, making responses more consistent.",
+      "scored": true
+    },
+    {
+      "id": 9,
+      "text": "Which AWS service is purpose-built for extracting text, tables, and form data from scanned documents and PDFs?",
+      "type": "multiple-choice",
+      "options": [
+        "Amazon Rekognition",
+        "Amazon Textract",
+        "Amazon Comprehend",
+        "Amazon Transcribe"
+      ],
+      "correct": [1],
+      "explanation": "Amazon Textract extracts text, handwriting, tables, and forms from documents.",
+      "scored": true
+    },
+    {
+      "id": 10,
+      "text": "Match each AWS service to its primary use case: 1. Amazon Polly, 2. Amazon Transcribe, 3. Amazon Lex, 4. Amazon Translate",
+      "type": "matching",
+      "leftItems": ["Amazon Polly", "Amazon Transcribe", "Amazon Lex", "Amazon Translate"],
+      "rightItems": ["Text-to-speech", "Speech-to-text", "Conversational AI/chatbots", "Language translation"],
+      "correct": [0, 1, 2, 3],
+      "explanation": "Polly = text-to-speech, Transcribe = speech-to-text, Lex = chatbots, Translate = translation.",
+      "scored": true
+    },
+    {
+      "id": 11,
+      "text": "A model performs extremely well on training data (99% accuracy) but poorly on validation data (60% accuracy). Which term describes this?",
+      "type": "multiple-choice",
+      "options": [
+        "Underfitting",
+        "Overfitting",
+        "High bias",
+        "Reinforcement learning"
+      ],
+      "correct": [1],
+      "explanation": "Overfitting occurs when a model memorizes training data but fails to generalize to new data.",
+      "scored": true
+    },
+    {
+      "id": 12,
+      "text": "A company wants to build a personalized recommendation engine for their e-commerce website. Which AWS service is purpose-built for this?",
+      "type": "multiple-choice",
+      "options": [
+        "Amazon Forecast",
+        "Amazon Personalize",
+        "Amazon SageMaker",
+        "Amazon Kendra"
+      ],
+      "correct": [1],
+      "explanation": "Amazon Personalize is purpose-built for real-time recommendations and personalization.",
+      "scored": true
+    },
+    {
+      "id": 13,
+      "text": "Which of the following are AWS Managed AI Services for text analysis? (Select TWO)",
+      "type": "multiple-response",
+      "options": [
+        "Amazon Comprehend",
+        "Amazon Rekognition",
+        "Amazon Polly",
+        "Amazon Translate",
+        "Amazon Textract"
+      ],
+      "correct": [0, 3],
+      "explanation": "Comprehend and Translate both work with text. Rekognition is for images/video, Polly is text-to-speech, Textract extracts text from documents.",
+      "scored": true
+    },
+    {
+      "id": 14,
+      "text": "Place the phases of a machine learning project in correct order: 1. Model deployment, 2. Data collection, 3. Model training, 4. Business problem definition",
+      "type": "ordering",
+      "options": [
+        "Business problem definition",
+        "Data collection",
+        "Model training",
+        "Model deployment"
+      ],
+      "correct": [0, 1, 2, 3],
+      "explanation": "Define the business problem first, then collect data, train the model, and finally deploy.",
+      "scored": true
+    },
+    {
+      "id": 15,
+      "text": "Which AWS service provides intelligent search with natural language understanding for enterprise document search?",
+      "type": "multiple-choice",
+      "options": [
+        "Amazon OpenSearch",
+        "Amazon RDS",
+        "Amazon Kendra",
+        "Amazon DynamoDB"
+      ],
+      "correct": [2],
+      "explanation": "Amazon Kendra is purpose-built for intelligent enterprise search with natural language Q&A.",
+      "scored": true
+    },
+    {
+      "id": 16,
+      "text": "A developer wants to use an AI assistant to help debug code and suggest fixes directly within their IDE. Which Amazon Q offering should they use?",
+      "type": "multiple-choice",
+      "options": [
+        "Amazon Q Business",
+        "Amazon Q Developer",
+        "Amazon Q Apps",
+        "Amazon Q for AWS Services"
+      ],
+      "correct": [1],
+      "explanation": "Amazon Q Developer is designed for coding assistance within IDEs.",
+      "scored": true
+    },
+    {
+      "id": 17,
+      "text": "Which of the following are components of Responsible AI? (Select TWO)",
+      "type": "multiple-response",
+      "options": [
+        "Fairness",
+        "High model accuracy",
+        "Explainability",
+        "Unlimited data storage",
+        "Low latency"
+      ],
+      "correct": [0, 2],
+      "explanation": "Fairness and explainability are key pillars of Responsible AI.",
+      "scored": true
+    },
+    {
+      "id": 18,
+      "text": "A generative AI model produces confident-sounding but factually incorrect information about historical events. What is this called?",
+      "type": "multiple-choice",
+      "options": [
+        "Overfitting",
+        "Hallucination",
+        "Bias",
+        "Model drift"
+      ],
+      "correct": [1],
+      "explanation": "Hallucination is when a generative model produces factually incorrect but plausible-sounding information.",
+      "scored": true
+    },
+    {
+      "id": 19,
+      "text": "An organization wants to grant temporary permissions to an EC2 instance to access an S3 bucket without storing long-term credentials. Which IAM component should they use?",
+      "type": "multiple-choice",
+      "options": [
+        "IAM User",
+        "IAM Group",
+        "IAM Policy",
+        "IAM Role"
+      ],
+      "correct": [3],
+      "explanation": "IAM Roles provide temporary credentials to AWS services like EC2.",
+      "scored": true
+    },
+    {
+      "id": 20,
+      "text": "Which AWS service is serverless and runs code in response to events without provisioning servers?",
+      "type": "multiple-choice",
+      "options": [
+        "Amazon EC2",
+        "AWS Lambda",
+        "Amazon S3",
+        "Amazon RDS"
+      ],
+      "correct": [1],
+      "explanation": "AWS Lambda runs code in response to events without server management.",
+      "scored": true
+    },
+    {
+      "id": 21,
+      "text": "Which of the following are SageMaker governance and monitoring features? (Select TWO)",
+      "type": "multiple-response",
+      "options": [
+        "SageMaker Model Monitor",
+        "SageMaker Clarify",
+        "SageMaker Data Wrangler",
+        "SageMaker Ground Truth",
+        "SageMaker Studio"
+      ],
+      "correct": [0, 1],
+      "explanation": "Model Monitor detects drift, Clarify detects bias and provides explainability.",
+      "scored": true
+    },
+    {
+      "id": 22,
+      "text": "A company wants to automatically detect PII such as patient names and medical record numbers in unstructured clinical notes. Which AWS service is purpose-built for medical text analysis?",
+      "type": "multiple-choice",
+      "options": [
+        "Amazon Comprehend",
+        "Amazon Comprehend Medical",
+        "Amazon Transcribe Medical",
+        "Amazon HealthLake"
+      ],
+      "correct": [1],
+      "explanation": "Amazon Comprehend Medical is purpose-built for detecting medical entities in text.",
+      "scored": true
+    },
+    {
+      "id": 23,
+      "text": "Place the steps for a typical RAG workflow in order: 1. Generate response, 2. Retrieve documents, 3. Convert query to vector, 4. User asks question, 5. Add context to prompt",
+      "type": "ordering",
+      "options": [
+        "User asks question",
+        "Convert query to vector",
+        "Retrieve documents",
+        "Add context to prompt",
+        "Generate response"
+      ],
+      "correct": [0, 1, 2, 3, 4],
+      "explanation": "User asks, query is vectorized, relevant documents retrieved, context added to prompt, then LLM generates response.",
+      "scored": true
+    },
+    {
+      "id": 24,
+      "text": "Which AWS service provides automated detection of sensitive data (like credit card numbers) in S3 buckets?",
+      "type": "multiple-choice",
+      "options": [
+        "Amazon Inspector",
+        "AWS Config",
+        "Amazon Macie",
+        "AWS CloudTrail"
+      ],
+      "correct": [2],
+      "explanation": "Amazon Macie uses ML to discover and protect sensitive data in S3.",
+      "scored": true
+    },
+    {
+      "id": 25,
+      "text": "A company wants to evaluate multiple foundation models on metrics like accuracy and toxicity before selecting one. Which Bedrock feature enables this?",
+      "type": "multiple-choice",
+      "options": [
+        "Knowledge Bases",
+        "Agents",
+        "Guardrails",
+        "Model Evaluation"
+      ],
+      "correct": [3],
+      "explanation": "Bedrock Model Evaluation allows comparing foundation models on various metrics.",
+      "scored": true
+    },
+    {
+      "id": 26,
+      "text": "Which of the following are IAM best practices? (Select TWO)",
+      "type": "multiple-response",
+      "options": [
+        "Use root user for daily tasks",
+        "Enable MFA for privileged users",
+        "Grant least privilege permissions",
+        "Share access keys across team",
+        "Store access keys in code repos"
+      ],
+      "correct": [1, 2],
+      "explanation": "MFA and least privilege are core IAM best practices.",
+      "scored": true
+    },
+    {
+      "id": 27,
+      "text": "A model consistently predicts house prices $50,000 lower than actual values across all price ranges. Which term describes this?",
+      "type": "multiple-choice",
+      "options": [
+        "Variance",
+        "Overfitting",
+        "Bias",
+        "Underfitting"
+      ],
+      "correct": [2],
+      "explanation": "Systematic error in predictions indicates high bias.",
+      "scored": true
+    },
+    {
+      "id": 28,
+      "text": "Which AWS service provides a central dashboard of AWS security best practices and recommendations?",
+      "type": "multiple-choice",
+      "options": [
+        "AWS Trusted Advisor",
+        "AWS Config",
+        "Amazon Inspector",
+        "AWS Audit Manager"
+      ],
+      "correct": [0],
+      "explanation": "AWS Trusted Advisor provides recommendations for cost, performance, security, and fault tolerance.",
+      "scored": true
+    },
+    {
+      "id": 29,
+      "text": "A company wants to track and compare multiple ML training runs with different hyperparameters. Which SageMaker feature should they use?",
+      "type": "multiple-choice",
+      "options": [
+        "SageMaker Model Monitor",
+        "SageMaker Experiments",
+        "SageMaker Debugger",
+        "SageMaker Clarify"
+      ],
+      "correct": [1],
+      "explanation": "SageMaker Experiments tracks and compares training runs, hyperparameters, and metrics.",
+      "scored": true
+    },
+    {
+      "id": 30,
+      "text": "Which AWS service records API activity for auditing and compliance?",
+      "type": "multiple-choice",
+      "options": [
+        "Amazon CloudWatch",
+        "AWS CloudTrail",
+        "AWS Config",
+        "Amazon GuardDuty"
+      ],
+      "correct": [1],
+      "explanation": "AWS CloudTrail records API calls for auditing and security analysis.",
+      "scored": true
+    },
+    {
+      "id": 31,
+      "text": "Which of the following are challenges specific to Generative AI? (Select TWO)",
+      "type": "multiple-response",
+      "options": [
+        "Hallucinations",
+        "Overfitting",
+        "High bias",
+        "Prompt injection attacks",
+        "Insufficient training data"
+      ],
+      "correct": [0, 3],
+      "explanation": "Hallucinations and prompt injection are unique challenges for generative AI models.",
+      "scored": true
+    },
+    {
+      "id": 32,
+      "text": "A company needs to automatically moderate user-uploaded images for inappropriate content. Which AWS service should they use?",
+      "type": "multiple-choice",
+      "options": [
+        "Amazon Textract",
+        "Amazon Rekognition Content Moderation",
+        "Amazon Comprehend",
+        "Amazon GuardDuty"
+      ],
+      "correct": [1],
+      "explanation": "Amazon Rekognition Content Moderation detects inappropriate content in images and videos.",
+      "scored": true
+    },
+    {
+      "id": 33,
+      "text": "Match each AWS security service to its primary function: 1. AWS Config, 2. Amazon Inspector, 3. AWS Artifact, 4. AWS Audit Manager",
+      "type": "matching",
+      "leftItems": ["AWS Config", "Amazon Inspector", "AWS Artifact", "AWS Audit Manager"],
+      "rightItems": ["Resource compliance and configuration history", "Security vulnerability scanning", "AWS compliance reports access", "Automated evidence collection for audits"],
+      "correct": [0, 1, 2, 3],
+      "explanation": "Config tracks resource configs, Inspector scans for vulnerabilities, Artifact provides compliance reports, Audit Manager collects audit evidence.",
+      "scored": true
+    },
+    {
+      "id": 34,
+      "text": "What is MLOps focused on?",
+      "type": "multiple-choice",
+      "options": [
+        "Writing ML algorithms",
+        "Automating the ML lifecycle (CI/CD, monitoring)",
+        "Creating labeled datasets",
+        "Securing IAM roles"
+      ],
+      "correct": [1],
+      "explanation": "MLOps automates the end-to-end ML lifecycle including CI/CD, monitoring, and governance.",
+      "scored": true
+    },
+    {
+      "id": 35,
+      "text": "A company wants to build a voice-enabled chatbot. The chatbot needs to understand spoken language, maintain context, and speak responses. Which combination is most appropriate?",
+      "type": "multiple-choice",
+      "options": [
+        "Amazon Transcribe + Amazon Polly + Lambda",
+        "Amazon Lex + Amazon Polly + Lambda",
+        "Amazon Transcribe + Amazon Comprehend + Polly",
+        "Amazon Lex + Amazon Transcribe + Polly"
+      ],
+      "correct": [1],
+      "explanation": "Lex handles conversation and includes speech recognition, Polly handles speech output, Lambda handles business logic.",
+      "scored": true
+    },
+    {
+      "id": 36,
+      "text": "Which AWS service provides a no-code visual interface for data preparation in SageMaker?",
+      "type": "multiple-choice",
+      "options": [
+        "SageMaker Studio",
+        "SageMaker Data Wrangler",
+        "SageMaker Clarify",
+        "SageMaker Model Monitor"
+      ],
+      "correct": [1],
+      "explanation": "SageMaker Data Wrangler provides a no-code visual interface for data preparation.",
+      "scored": true
+    },
+    {
+      "id": 37,
+      "text": "Which of the following are AWS services that process audio/speech? (Select TWO)",
+      "type": "multiple-response",
+      "options": [
+        "Amazon Polly",
+        "Amazon Textract",
+        "Amazon Transcribe",
+        "Amazon Rekognition",
+        "Amazon Comprehend"
+      ],
+      "correct": [0, 2],
+      "explanation": "Polly = text-to-speech, Transcribe = speech-to-text.",
+      "scored": true
+    },
+    {
+      "id": 38,
+      "text": "A company wants to forecast next month's product demand based on historical sales data. Which AWS service is purpose-built for this?",
+      "type": "multiple-choice",
+      "options": [
+        "Amazon Personalize",
+        "Amazon Forecast",
+        "Amazon SageMaker",
+        "Amazon Kendra"
+      ],
+      "correct": [1],
+      "explanation": "Amazon Forecast is purpose-built for time-series forecasting.",
+      "scored": true
+    },
+    {
+      "id": 39,
+      "text": "What does the AWS Shared Responsibility Model state?",
+      "type": "multiple-choice",
+      "options": [
+        "AWS is responsible for security OF the cloud; customer is responsible for security IN the cloud",
+        "AWS is responsible for all security",
+        "Customer is responsible for all security",
+        "Security is automatically handled by default"
+      ],
+      "correct": [0],
+      "explanation": "AWS secures the infrastructure; customers secure their data, applications, and configurations.",
+      "scored": true
+    },
+    {
+      "id": 40,
+      "text": "Which SageMaker feature helps create labeled datasets using a combination of ML and human review?",
+      "type": "multiple-choice",
+      "options": [
+        "SageMaker Data Wrangler",
+        "SageMaker Ground Truth",
+        "SageMaker Clarify",
+        "SageMaker Model Monitor"
+      ],
+      "correct": [1],
+      "explanation": "SageMaker Ground Truth combines automated labeling with human review for high-quality datasets.",
+      "scored": true
+    },
+    {
+      "id": 41,
+      "text": "Place the steps for creating a secure S3 bucket with IAM permissions in the correct order: 1. Create bucket, 2. Create IAM policy, 3. Attach policy to user, 4. Configure bucket policy",
+      "type": "ordering",
+      "options": [
+        "Create S3 bucket",
+        "Create IAM policy",
+        "Attach policy to user/role",
+        "Configure bucket policy"
+      ],
+      "correct": [0, 1, 3, 2],
+      "explanation": "Create bucket first, then create IAM policy, configure bucket policy if needed, then attach IAM policy to user/role.",
+      "scored": true
+    },
+    {
+      "id": 42,
+      "text": "A company wants to add human review to their AI document processing pipeline for low-confidence predictions. Which AWS service provides this?",
+      "type": "multiple-choice",
+      "options": [
+        "Amazon Mechanical Turk",
+        "Amazon Augmented AI (A2I)",
+        "Amazon SageMaker Ground Truth",
+        "Amazon Rekognition"
+      ],
+      "correct": [1],
+      "explanation": "Amazon Augmented AI (A2I) adds human review workflows to AI predictions.",
+      "scored": true
+    },
+    {
+      "id": 43,
+      "text": "Which of the following are SageMaker built-in algorithms? (Select TWO)",
+      "type": "multiple-response",
+      "options": [
+        "XGBoost",
+        "Apache Spark",
+        "Linear Learner",
+        "TensorFlow",
+        "PyTorch"
+      ],
+      "correct": [0, 2],
+      "explanation": "XGBoost and Linear Learner are built-in algorithms. TensorFlow and PyTorch are frameworks.",
+      "scored": true
+    },
+    {
+      "id": 44,
+      "text": "What does RLHF (Reinforcement Learning from Human Feedback) involve?",
+      "type": "multiple-choice",
+      "options": [
+        "Training models on unlabeled data",
+        "Using human preferences to fine-tune model behavior",
+        "Detecting model drift",
+        "Creating labeled datasets"
+      ],
+      "correct": [1],
+      "explanation": "RLHF uses human feedback to align model outputs with human preferences.",
+      "scored": true
+    },
+    {
+      "id": 45,
+      "text": "A company wants to run thousands of parallel batch inference jobs cost-effectively without provisioning servers. Which SageMaker capability is most appropriate?",
+      "type": "multiple-choice",
+      "options": [
+        "Real-Time Endpoint",
+        "Serverless Inference",
+        "Batch Transform",
+        "Ground Truth"
+      ],
+      "correct": [2],
+      "explanation": "SageMaker Batch Transform is designed for batch inference on large datasets.",
+      "scored": true
+    },
+    {
+      "id": 46,
+      "text": "Which AWS service provides self-service access to AWS compliance reports and agreements?",
+      "type": "multiple-choice",
+      "options": [
+        "AWS Config",
+        "AWS Artifact",
+        "AWS Audit Manager",
+        "AWS Trusted Advisor"
+      ],
+      "correct": [1],
+      "explanation": "AWS Artifact provides on-demand access to AWS compliance reports and agreements.",
+      "scored": true
+    },
+    {
+      "id": 47,
+      "text": "A malicious user crafts input that bypasses an LLM's safety filters. What is this attack called?",
+      "type": "multiple-choice",
+      "options": [
+        "Data poisoning",
+        "Prompt injection",
+        "Model evasion",
+        "Model inversion"
+      ],
+      "correct": [1],
+      "explanation": "Prompt injection involves crafting inputs that bypass safety filters or cause unintended behavior.",
+      "scored": true
+    },
+    {
+      "id": 48,
+      "text": "Which AWS service provides continuous monitoring of resource configurations and compliance against desired policies?",
+      "type": "multiple-choice",
+      "options": [
+        "AWS Config",
+        "Amazon Inspector",
+        "AWS CloudTrail",
+        "Amazon GuardDuty"
+      ],
+      "correct": [0],
+      "explanation": "AWS Config tracks resource configurations and evaluates compliance against desired policies.",
+      "scored": true
+    },
+    {
+      "id": 49,
+      "text": "A company wants to build a document search system where employees ask natural language questions like 'Show me Q3 reports' and get accurate results. Which service is purpose-built for this?",
+      "type": "multiple-choice",
+      "options": [
+        "Amazon OpenSearch",
+        "Amazon Kendra",
+        "Amazon RDS",
+        "Amazon DynamoDB"
+      ],
+      "correct": [1],
+      "explanation": "Amazon Kendra provides intelligent search with natural language understanding.",
+      "scored": true
+    },
+    {
+      "id": 50,
+      "text": "Which of the following are components of the AWS Shared Responsibility Model? (Select TWO)",
+      "type": "multiple-response",
+      "options": [
+        "AWS is responsible for physical infrastructure",
+        "Customer is responsible for physical infrastructure",
+        "Customer is responsible for their data and applications",
+        "AWS is responsible for customer access keys",
+        "AWS is responsible for customer IAM configurations"
+      ],
+      "correct": [0, 2],
+      "explanation": "AWS secures physical infrastructure; customers secure their data, applications, and configurations.",
+      "scored": true
+    },
+    {
+      "id": 51,
+      "text": "A data scientist is evaluating a fraud detection model. Results: 45 true positives, 20 false positives, 5 false negatives. What is precision?",
+      "type": "multiple-choice",
+      "options": [
+        "45/50 = 90%",
+        "45/65 = 69%",
+        "45/950 = 4.7%",
+        "45/1000 = 4.5%"
+      ],
+      "correct": [1],
+      "explanation": "Precision = TP/(TP+FP) = 45/(45+20) = 45/65 = 69%.",
+      "scored": true
+    },
+    {
+      "id": 52,
+      "text": "Which AWS service automatically detects and protects sensitive data in S3 buckets using ML?",
+      "type": "multiple-choice",
+      "options": [
+        "Amazon Inspector",
+        "AWS Config",
+        "Amazon Macie",
+        "AWS GuardDuty"
+      ],
+      "correct": [2],
+      "explanation": "Amazon Macie uses ML to discover and protect sensitive data in S3.",
+      "scored": true
+    },
+    {
+      "id": 53,
+      "text": "Match each AWS service to its use case: 1. Amazon Rekognition, 2. Amazon Textract, 3. Amazon Comprehend, 4. Amazon Transcribe",
+      "type": "matching",
+      "leftItems": ["Amazon Rekognition", "Amazon Textract", "Amazon Comprehend", "Amazon Transcribe"],
+      "rightItems": ["Image/video analysis", "Document text extraction", "NLP text analysis", "Speech-to-text"],
+      "correct": [0, 1, 2, 3],
+      "explanation": "Rekognition = image/video, Textract = document extraction, Comprehend = NLP, Transcribe = speech-to-text.",
+      "scored": true
+    },
+    {
+      "id": 54,
+      "text": "A company wants to ensure their AI model does not discriminate based on gender or ethnicity. Which Responsible AI pillar does this address?",
+      "type": "multiple-choice",
+      "options": [
+        "Explainability",
+        "Fairness",
+        "Robustness",
+        "Privacy"
+      ],
+      "correct": [1],
+      "explanation": "Fairness ensures models do not discriminate against protected groups.",
+      "scored": true
+    },
+    {
+      "id": 55,
+      "text": "Which of the following are benefits of Amazon Q Business? (Select TWO)",
+      "type": "multiple-response",
+      "options": [
+        "Answers questions using internal company data",
+        "Generates code suggestions in IDE",
+        "Connects to data sources like S3 and SharePoint",
+        "Deploys containerized applications",
+        "Creates EC2 instances"
+      ],
+      "correct": [0, 2],
+      "explanation": "Amazon Q Business answers questions from company data and connects to various data sources.",
+      "scored": true
+    },
+    {
+      "id": 56,
+      "text": "Which AWS service provides on-demand access to AWS security and compliance documentation?",
+      "type": "multiple-choice",
+      "options": [
+        "AWS Trusted Advisor",
+        "AWS Artifact",
+        "AWS Audit Manager",
+        "AWS Config"
+      ],
+      "correct": [1],
+      "explanation": "AWS Artifact provides access to AWS compliance reports and agreements.",
+      "scored": true
+    },
+    {
+      "id": 57,
+      "text": "Place the steps for building and deploying a model in SageMaker in correct order: 1. Deploy to endpoint, 2. Train, 3. Prepare data, 4. Create notebook, 5. Evaluate",
+      "type": "ordering",
+      "options": [
+        "Create notebook",
+        "Prepare data",
+        "Train model",
+        "Evaluate model",
+        "Deploy to endpoint"
+      ],
+      "correct": [0, 1, 2, 3, 4],
+      "explanation": "Create notebook first, prepare data, train, evaluate, then deploy.",
+      "scored": true
+    },
+    {
+      "id": 58,
+      "text": "A company wants to automatically run code whenever a file is uploaded to S3. Which service should trigger the code?",
+      "type": "multiple-choice",
+      "options": [
+        "Amazon EC2",
+        "AWS Lambda",
+        "AWS Fargate",
+        "Amazon ECS"
+      ],
+      "correct": [1],
+      "explanation": "AWS Lambda can be triggered directly by S3 events.",
+      "scored": true
+    },
+    {
+      "id": 59,
+      "text": "Which SageMaker feature automatically detects model drift after deployment?",
+      "type": "multiple-choice",
+      "options": [
+        "SageMaker Clarify",
+        "SageMaker Model Monitor",
+        "SageMaker Data Wrangler",
+        "SageMaker Experiments"
+      ],
+      "correct": [1],
+      "explanation": "SageMaker Model Monitor detects model drift and data quality issues after deployment.",
+      "scored": true
+    },
+    {
+      "id": 60,
+      "text": "A company wants to add human workers to perform simple data labeling tasks. Which AWS service provides this?",
+      "type": "multiple-choice",
+      "options": [
+        "Amazon Augmented AI",
+        "Amazon Mechanical Turk",
+        "SageMaker Ground Truth",
+        "Amazon Rekognition"
+      ],
+      "correct": [1],
+      "explanation": "Amazon Mechanical Turk provides a crowdsourced workforce for simple tasks.",
+      "scored": true
+    },
+    {
+      "id": 61,
+      "text": "Which of the following are Amazon Bedrock features? (Select TWO)",
+      "type": "multiple-response",
+      "options": [
+        "Guardrails",
+        "CodePipeline",
+        "Knowledge Bases",
+        "CloudFront",
+        "Route 53"
+      ],
+      "correct": [0, 2],
+      "explanation": "Guardrails and Knowledge Bases are Bedrock features. Others are separate AWS services.",
+      "scored": true
+    },
+    {
+      "id": 62,
+      "text": "A company wants to automatically detect and remediate non-compliant AWS resource configurations. Which service should they use?",
+      "type": "multiple-choice",
+      "options": [
+        "AWS Config",
+        "Amazon Inspector",
+        "AWS CloudTrail",
+        "AWS Trusted Advisor"
+      ],
+      "correct": [0],
+      "explanation": "AWS Config tracks resources and can trigger remediation for non-compliant configurations.",
+      "scored": true
+    },
+    {
+      "id": 63,
+      "text": "What is the purpose of SageMaker Clarify?",
+      "type": "multiple-choice",
+      "options": [
+        "Track training experiments",
+        "Detect bias and explain model predictions",
+        "Monitor deployed models",
+        "Debug training jobs"
+      ],
+      "correct": [1],
+      "explanation": "SageMaker Clarify detects bias and provides explainability for model predictions.",
+      "scored": true
+    },
+    {
+      "id": 64,
+      "text": "A company wants to build an application using foundation models with minimal infrastructure management. Which AWS service provides this?",
+      "type": "multiple-choice",
+      "options": [
+        "Amazon SageMaker",
+        "Amazon Bedrock",
+        "AWS Lambda",
+        "Amazon EC2"
+      ],
+      "correct": [1],
+      "explanation": "Amazon Bedrock provides access to foundation models as a fully managed service.",
+      "scored": true
+    },
+    {
+      "id": 65,
+      "text": "Which of the following are IAM best practices? (Select TWO)",
+      "type": "multiple-response",
+      "options": [
+        "Use root user for daily tasks",
+        "Enable MFA",
+        "Grant least privilege",
+        "Share access keys",
+        "Use only one IAM user for everyone"
+      ],
+      "correct": [1, 2],
+      "explanation": "MFA and least privilege are core IAM security best practices.",
+      "scored": true
+    }
+  ]
+}
