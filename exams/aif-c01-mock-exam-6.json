@@ -1,0 +1,597 @@
+{
+  "examName": "AWS AIF-C01 Mock Exam - Full Coverage",
+  "timeLimitMinutes": 90,
+  "passingScore": 700,
+  "questions": [
+    {
+      "id": 1,
+      "text": "Which type of machine learning uses labeled datasets to train algorithms to classify data or predict outcomes?",
+      "type": "multiple-choice",
+      "options": ["Unsupervised learning", "Reinforcement learning", "Supervised learning", "Generative adversarial networks"],
+      "correct": [2],
+      "explanation": "Supervised learning relies on labeled data (historical data with known answers) to train models for prediction or classification.",
+      "scored": true
+    },
+    {
+      "id": 2,
+      "text": "What is the primary purpose of unsupervised machine learning?",
+      "type": "multiple-choice",
+      "options": ["To predict future values based on historical trends", "To find hidden patterns or groupings within unlabeled data", "To learn optimal actions through trial and error", "To generate entirely new media assets"],
+      "correct": [1],
+      "explanation": "Unsupervised learning uses unlabeled data to discover hidden patterns, structures, or anomalies, such as in clustering tasks.",
+      "scored": true
+    },
+    {
+      "id": 3,
+      "text": "Which learning method is based on an agent taking actions in an environment to maximize cumulative rewards?",
+      "type": "multiple-choice",
+      "options": ["Reinforcement learning", "Supervised learning", "Unsupervised learning", "Transfer learning"],
+      "correct": [0],
+      "explanation": "Reinforcement learning is a feedback-based ML technique where an agent learns to behave in an environment by performing actions and seeing the results as rewards or penalties.",
+      "scored": true
+    },
+    {
+      "id": 4,
+      "text": "What occurs when a machine learning model performs exceptionally well on training data but poorly on new, unseen data?",
+      "type": "multiple-choice",
+      "options": ["Underfitting", "Overfitting", "Convergence", "Data augmentation"],
+      "correct": [1],
+      "explanation": "Overfitting happens when a model learns the training data too well, including its noise, making it unable to generalize to new, unseen data.",
+      "scored": true
+    },
+    {
+      "id": 5,
+      "text": "Which algorithm is best suited for predicting a continuous numerical value, such as a house price?",
+      "type": "multiple-choice",
+      "options": ["Logistic Regression", "Linear Regression", "K-Means Clustering", "Principal Component Analysis"],
+      "correct": [1],
+      "explanation": "Linear regression is used for predicting continuous, numerical outcomes based on input features.",
+      "scored": true
+    },
+    {
+      "id": 6,
+      "text": "Which type of algorithm should be used for a binary classification task, such as predicting whether an email is spam or not?",
+      "type": "multiple-choice",
+      "options": ["Linear Regression", "Logistic Regression", "K-Means Clustering", "Generative AI"],
+      "correct": [1],
+      "explanation": "Logistic regression is a fundamental algorithm used specifically for binary classification tasks.",
+      "scored": true
+    },
+    {
+      "id": 7,
+      "text": "Emails, social media posts, audio recordings, and video files are examples of what type of data?",
+      "type": "multiple-choice",
+      "options": ["Structured data", "Tabular data", "Time-series data", "Unstructured data"],
+      "correct": [3],
+      "explanation": "Unstructured data lacks a predefined data model or organizational framework, making it suitable for modern AI/ML workloads like NLP and computer vision.",
+      "scored": true
+    },
+    {
+      "id": 8,
+      "text": "In model training, what term describes one complete pass of the algorithm over the entire training dataset?",
+      "type": "multiple-choice",
+      "options": ["Epoch", "Batch", "Inference", "Iteration"],
+      "correct": [0],
+      "explanation": "An epoch indicates the number of passes the machine learning algorithm has completed around the entire training dataset.",
+      "scored": true
+    },
+    {
+      "id": 9,
+      "text": "What process involves breaking down raw text into smaller, manageable units (like words or subwords) before feeding it into a language model?",
+      "type": "multiple-choice",
+      "options": ["Chunking", "Embedding", "Tokenization", "Vectorization"],
+      "correct": [2],
+      "explanation": "Tokenization is the process of breaking down text into smaller pieces called tokens, which models use as their fundamental unit of text.",
+      "scored": true
+    },
+    {
+      "id": 10,
+      "text": "How does Generative AI primarily differ from traditional AI?",
+      "type": "multiple-choice",
+      "options": ["It processes unstructured data faster.", "It creates entirely new content based on learned patterns.", "It relies exclusively on rule-based programming.", "It only performs binary classification."],
+      "correct": [1],
+      "explanation": "While traditional AI focuses on analyzing data to predict or classify, Generative AI uses its training to generate net-new content like text, code, or images.",
+      "scored": true
+    },
+    {
+      "id": 11,
+      "text": "In the context of Generative AI, what is an 'embedding'?",
+      "type": "multiple-choice",
+      "options": ["The final text output generated by the model.", "A numerical vector representation of data that captures semantic meaning.", "A hardcoded rule designed to prevent toxic outputs.", "A method to split documents into smaller paragraphs."],
+      "correct": [1],
+      "explanation": "Embeddings are arrays of numbers (vectors) that represent the semantic meaning of data (like text or images), allowing models to understand relationships between concepts.",
+      "scored": true
+    },
+    {
+      "id": 12,
+      "text": "What is it called when a Large Language Model generates information that is factually incorrect but sounds highly plausible?",
+      "type": "multiple-choice",
+      "options": ["Overfitting", "Data Drift", "Hallucination", "Prompt Injection"],
+      "correct": [2],
+      "explanation": "Hallucination occurs when a model confidently generates a response that is logically sound but factually false or nonsensical.",
+      "scored": true
+    },
+    {
+      "id": 13,
+      "text": "Which inference parameter controls the randomness and creativity of a foundation model's generated text?",
+      "type": "multiple-choice",
+      "options": ["Max tokens", "Top-K", "Epoch", "Temperature"],
+      "correct": [3],
+      "explanation": "Temperature controls the probability distribution of the next token. A lower temperature makes the output more deterministic, while a higher temperature makes it more creative and random.",
+      "scored": true
+    },
+    {
+      "id": 14,
+      "text": "The practice of crafting specific inputs to guide a foundation model toward producing a desired output is known as:",
+      "type": "multiple-choice",
+      "options": ["Fine-tuning", "Prompt Engineering", "Transfer learning", "Data labeling"],
+      "correct": [1],
+      "explanation": "Prompt engineering involves optimizing the text input (prompt) to effectively communicate with and direct a Generative AI model.",
+      "scored": true
+    },
+    {
+      "id": 15,
+      "text": "What does RAG stand for in the context of improving foundation model outputs?",
+      "type": "multiple-choice",
+      "options": ["Random Access Generation", "Robust Algorithmic Growth", "Retrieval-Augmented Generation", "Recursive Action Guardrails"],
+      "correct": [2],
+      "explanation": "Retrieval-Augmented Generation (RAG) grounds a model by retrieving relevant data from an external knowledge base to augment the user's prompt before generation.",
+      "scored": true
+    },
+    {
+      "id": 16,
+      "text": "Which technique involves updating the underlying weights of a pre-trained foundation model using a smaller, task-specific dataset?",
+      "type": "multiple-choice",
+      "options": ["Prompt engineering", "Fine-tuning", "Retrieval-Augmented Generation", "Zero-shot learning"],
+      "correct": [1],
+      "explanation": "Fine-tuning alters the model's internal weights using targeted data to specialize the model for a specific domain or task.",
+      "scored": true
+    },
+    {
+      "id": 17,
+      "text": "What is the primary advantage of Transfer Learning?",
+      "type": "multiple-choice",
+      "options": ["It removes the need for any human oversight.", "It completely eliminates model bias.", "It leverages knowledge from a pre-trained model to solve a new, related task faster.", "It encrypts the model's training data."],
+      "correct": [2],
+      "explanation": "Transfer learning saves immense computational time and resources by starting with a pre-trained model and adapting it to a new task.",
+      "scored": true
+    },
+    {
+      "id": 18,
+      "text": "What is Amazon Bedrock?",
+      "type": "multiple-choice",
+      "options": ["A serverless data warehouse.", "A fully managed service offering access to high-performing foundation models via a single API.", "An IDE for writing Python code for ML models.", "A vector database built into Amazon S3."],
+      "correct": [1],
+      "explanation": "Amazon Bedrock is a fully managed service that provides easy API access to foundation models from leading AI companies, streamlining GenAI application development.",
+      "scored": true
+    },
+    {
+      "id": 19,
+      "text": "Which feature of Amazon Bedrock is specifically designed to automate the end-to-end process of Retrieval-Augmented Generation (RAG)?",
+      "type": "multiple-choice",
+      "options": ["Bedrock Guardrails", "Bedrock Agents", "Knowledge Bases for Amazon Bedrock", "SageMaker JumpStart"],
+      "correct": [2],
+      "explanation": "Knowledge Bases for Amazon Bedrock securely connects foundation models to internal company data sources to deliver accurate, context-aware responses via RAG.",
+      "scored": true
+    },
+    {
+      "id": 20,
+      "text": "Which Amazon Bedrock feature allows foundation models to interact with company systems and APIs to execute multi-step tasks?",
+      "type": "multiple-choice",
+      "options": ["Bedrock Knowledge Bases", "Amazon Bedrock Agents", "Bedrock Watermarking", "SageMaker Studio"],
+      "correct": [1],
+      "explanation": "Agents for Amazon Bedrock enable foundation models to execute multi-step tasks across company systems and data sources securely.",
+      "scored": true
+    },
+    {
+      "id": 21,
+      "text": "Which AWS service provides an ML hub with pre-trained models, built-in algorithms, and pre-built solution templates to accelerate ML journeys?",
+      "type": "multiple-choice",
+      "options": ["Amazon SageMaker JumpStart", "Amazon Q Business", "Amazon Comprehend", "Amazon Rekognition"],
+      "correct": [0],
+      "explanation": "SageMaker JumpStart is an ML hub offering pre-trained, open-source models and solution templates to help users get started with ML quickly.",
+      "scored": true
+    },
+    {
+      "id": 22,
+      "text": "Asking an LLM to translate a sentence from English to French without providing any examples in the prompt is an example of:",
+      "type": "multiple-choice",
+      "options": ["Few-shot prompting", "Zero-shot prompting", "Fine-tuning", "Chain-of-thought prompting"],
+      "correct": [1],
+      "explanation": "Zero-shot prompting occurs when a model is asked to perform a task without any prior examples or context provided within the prompt itself.",
+      "scored": true
+    },
+    {
+      "id": 23,
+      "text": "Which service acts as a fully managed, generative AI-powered assistant designed specifically to answer questions based on enterprise data and applications?",
+      "type": "multiple-choice",
+      "options": ["Amazon Q Business", "Amazon Personalize", "Amazon Macie", "Amazon Lex"],
+      "correct": [0],
+      "explanation": "Amazon Q Business is a generative AI-powered assistant that helps corporate employees get answers, solve problems, and generate content using their company's internal data.",
+      "scored": true
+    },
+    {
+      "id": 24,
+      "text": "When choosing a foundation model, selecting a massive LLM over a smaller model usually results in better reasoning capabilities, but negatively impacts:",
+      "type": "multiple-choice",
+      "options": ["Data privacy", "Model latency and inference cost", "Model explainability", "Context window size"],
+      "correct": [1],
+      "explanation": "Larger models require more computational power to generate responses, resulting in higher latency (slower responses) and increased costs compared to smaller models.",
+      "scored": true
+    },
+    {
+      "id": 25,
+      "text": "In the context of Responsible AI, what are systematic and repeatable errors in a computer system that create unfair outcomes called?",
+      "type": "multiple-choice",
+      "options": ["Hallucinations", "Model Latency", "Model Bias", "Data Drift"],
+      "correct": [2],
+      "explanation": "Model bias occurs when algorithms produce prejudiced or unfair results due to skewed assumptions in the machine learning process or biased training data.",
+      "scored": true
+    },
+    {
+      "id": 26,
+      "text": "Which AWS tool is specifically designed to detect potential bias in ML data/models and help explain how models make predictions?",
+      "type": "multiple-choice",
+      "options": ["Amazon SageMaker Clarify", "AWS CloudTrail", "Amazon Bedrock Guardrails", "Amazon Inspector"],
+      "correct": [0],
+      "explanation": "SageMaker Clarify provides machine learning developers with greater visibility into their training data and models to identify and limit bias and explain predictions.",
+      "scored": true
+    },
+    {
+      "id": 27,
+      "text": "Which feature provides built-in safeguards to filter harmful content and mask personally identifiable information (PII) in generative AI applications?",
+      "type": "multiple-choice",
+      "options": ["Amazon A2I", "Amazon Bedrock Guardrails", "AWS WAF", "Amazon Macie"],
+      "correct": [1],
+      "explanation": "Guardrails for Amazon Bedrock allows organizations to implement safeguards tailored to their use cases and responsible AI policies, filtering toxic content and PII bidirectionally.",
+      "scored": true
+    },
+    {
+      "id": 28,
+      "text": "According to the AWS Shared Responsibility Model for AI, which of the following is the customer's responsibility?",
+      "type": "multiple-choice",
+      "options": ["Securing the physical infrastructure of AWS data centers.", "Patching the underlying host operating system of managed AI services.", "Configuring IAM roles to restrict access to training data.", "Securing the internal architecture of Amazon Bedrock base models."],
+      "correct": [2],
+      "explanation": "Customers are responsible for \"Security IN the Cloud,\" which includes managing their data, configuring IAM policies, and setting up encryption.",
+      "scored": true
+    },
+    {
+      "id": 29,
+      "text": "A user crafts a malicious input designed to bypass a chatbot's safety filters and reveal system instructions. What is this security threat called?",
+      "type": "multiple-choice",
+      "options": ["Data poisoning", "Prompt injection", "DDoS attack", "Model inversion"],
+      "correct": [1],
+      "explanation": "Prompt injection is a vulnerability where an attacker uses crafted inputs to manipulate a language model into ignoring its instructions and performing malicious actions.",
+      "scored": true
+    },
+    {
+      "id": 30,
+      "text": "How does Amazon Bedrock handle customer data privacy regarding base foundation models?",
+      "type": "multiple-choice",
+      "options": ["Customer prompts are used to train Amazon's proprietary models.", "Customer prompts and responses are completely isolated and never used to train the base models.", "Customer data is shared with third-party model providers for continuous improvement.", "Customer data is public by default unless explicitly encrypted."],
+      "correct": [1],
+      "explanation": "AWS ensures that customer data, including prompts and responses, remains secure and private. It is not shared with third-party model providers and is not used to train the base foundation models.",
+      "scored": true
+    },
+    {
+      "id": 31,
+      "text": "Which AWS service makes it easy to implement human review of machine learning predictions?",
+      "type": "multiple-choice",
+      "options": ["Amazon Mechanical Turk", "Amazon Augmented AI (Amazon A2I)", "Amazon SageMaker Ground Truth", "Amazon Rekognition"],
+      "correct": [1],
+      "explanation": "Amazon A2I provides built-in human review workflows for common ML use cases, ensuring high confidence in ML predictions.",
+      "scored": true
+    },
+    {
+      "id": 32,
+      "text": "Which feature enables teams to create a single source of truth for documenting a machine learning model's business details, intended uses, and performance metrics?",
+      "type": "multiple-choice",
+      "options": ["AWS Config", "Amazon SageMaker Model Cards", "Amazon CloudWatch", "AWS Audit Manager"],
+      "correct": [1],
+      "explanation": "SageMaker Model Cards help centralize and standardize documentation throughout the model lifecycle for governance and transparency.",
+      "scored": true
+    },
+    {
+      "id": 33,
+      "text": "Root Mean Square Error (RMSE) is a common metric used to evaluate the performance of which type of machine learning model?",
+      "type": "multiple-choice",
+      "options": ["Classification", "Clustering", "Regression", "Natural Language Processing"],
+      "correct": [2],
+      "explanation": "RMSE measures the average difference between values predicted by a model and the actual values. It is heavily used to evaluate regression models.",
+      "scored": true
+    },
+    {
+      "id": 34,
+      "text": "Which tool provides a visual layout of the performance of a classification model, highlighting true positives, false positives, true negatives, and false negatives?",
+      "type": "multiple-choice",
+      "options": ["Scatter plot", "Confusion Matrix", "Learning curve", "Dendrogram"],
+      "correct": [1],
+      "explanation": "A confusion matrix is a specific table layout that visualizes the performance of an algorithm, commonly used in classification tasks.",
+      "scored": true
+    },
+    {
+      "id": 35,
+      "text": "Which field of AI focuses on enabling machines to derive meaningful information from digital images, videos, and other visual inputs?",
+      "type": "multiple-choice",
+      "options": ["Natural Language Processing", "Computer Vision", "Reinforcement Learning", "Time-series forecasting"],
+      "correct": [1],
+      "explanation": "Computer Vision is the field of AI that trains computers to interpret and understand the visual world.",
+      "scored": true
+    },
+    {
+      "id": 36,
+      "text": "Which of the following AWS services are primarily designed for Natural Language Processing (NLP) tasks? (Select TWO)",
+      "type": "multiple-response",
+      "options": ["Amazon Comprehend", "Amazon Rekognition", "Amazon Lex", "Amazon Forecast", "Amazon Lookout for Vision"],
+      "correct": [0, 2],
+      "explanation": "Amazon Comprehend extracts insights from text, and Amazon Lex is used to build conversational interfaces (chatbots). Both are NLP services.",
+      "scored": true
+    },
+    {
+      "id": 37,
+      "text": "Which of the following approaches help mitigate hallucinations in Generative AI applications? (Select TWO)",
+      "type": "multiple-response",
+      "options": ["Increasing the model's temperature to maximum.", "Implementing Retrieval-Augmented Generation (RAG).", "Providing clear, detailed context in the prompt.", "Using an older, smaller model.", "Removing all system prompts."],
+      "correct": [1, 2],
+      "explanation": "RAG grounds the model in factual data, and clear prompting sets strict boundaries, both of which reduce the likelihood of hallucinations.",
+      "scored": true
+    },
+    {
+      "id": 38,
+      "text": "Which of the following statements correctly describe characteristics of Foundation Models (FMs)? (Select TWO)",
+      "type": "multiple-response",
+      "options": ["They are trained on massive amounts of mostly unlabeled data.", "They require training from scratch for every new task.", "They can be adapted to a wide range of downstream tasks.", "They are limited to processing only tabular datasets.", "They natively understand all proprietary corporate data without configuration."],
+      "correct": [0, 2],
+      "explanation": "FMs are massive models pre-trained on vast datasets (often self-supervised) and can be adapted (fine-tuned or prompted) for numerous distinct tasks.",
+      "scored": true
+    },
+    {
+      "id": 39,
+      "text": "Which TWO metrics are most commonly used to evaluate the performance of a classification model? (Select TWO)",
+      "type": "multiple-response",
+      "options": ["Root Mean Square Error (RMSE)", "F1 Score", "Mean Absolute Error (MAE)", "Accuracy", "R-squared"],
+      "correct": [1, 3],
+      "explanation": "Accuracy and F1 Score (a harmonic mean of precision and recall) are standard metrics for evaluating classification tasks.",
+      "scored": true
+    },
+    {
+      "id": 40,
+      "text": "Which TWO AWS services are central to securing data at rest within AI workflows? (Select TWO)",
+      "type": "multiple-response",
+      "options": ["AWS WAF", "AWS KMS (Key Management Service)", "Amazon CloudFront", "Amazon S3 Server-Side Encryption", "AWS Shield"],
+      "correct": [1, 3],
+      "explanation": "AWS KMS manages cryptographic keys, and S3 Server-Side Encryption uses those keys to encrypt data at rest where training data or model artifacts are stored.",
+      "scored": true
+    },
+    {
+      "id": 41,
+      "text": "Order the following steps of the traditional Machine Learning lifecycle from first to last.",
+      "type": "ordering",
+      "options": ["Model Training", "Data Collection", "Model Evaluation", "Data Preparation"],
+      "correct": [1, 3, 0, 2],
+      "explanation": "The correct ML lifecycle order is: Data Collection -> Data Preparation -> Model Training -> Model Evaluation.",
+      "scored": true
+    },
+    {
+      "id": 42,
+      "text": "Order the sequence of events in a standard Retrieval-Augmented Generation (RAG) workflow.",
+      "type": "ordering",
+      "options": ["Foundation model generates a final response", "User submits a query/prompt", "Retrieve matching context from Vector Database", "Search Vector Database for relevant data"],
+      "correct": [1, 3, 2, 0],
+      "explanation": "First, the user submits a prompt. Then, the system searches the vector DB, retrieves the relevant context, and finally passes both the context and prompt to the FM to generate the answer.",
+      "scored": true
+    },
+    {
+      "id": 43,
+      "text": "Order the standard steps required to fine-tune a foundation model.",
+      "type": "ordering",
+      "options": ["Evaluate the fine-tuned model", "Select a base foundation model", "Run the training job", "Prepare a task-specific labeled dataset"],
+      "correct": [1, 3, 2, 0],
+      "explanation": "To fine-tune: Select the base model, prepare the fine-tuning dataset, execute the training job to adjust weights, and then evaluate the new model's performance.",
+      "scored": true
+    },
+    {
+      "id": 44,
+      "text": "Order the internal processing steps a Large Language Model takes when generating text.",
+      "type": "ordering",
+      "options": ["Embedding to vectors", "Tokenization", "Output generation via transformer blocks", "Input text reception"],
+      "correct": [3, 1, 0, 2],
+      "explanation": "The model receives input text, tokenizes it into smaller units, converts those tokens into numerical embeddings, and processes them through neural network layers to generate output.",
+      "scored": true
+    },
+    {
+      "id": 45,
+      "text": "Order the steps to set up and use a Knowledge Base in Amazon Bedrock.",
+      "type": "ordering",
+      "options": ["Sync the data source with the vector store", "Create a vector store configuration", "Upload corporate documents to an Amazon S3 bucket", "Query the knowledge base via an application"],
+      "correct": [2, 1, 0, 3],
+      "explanation": "First, upload data to S3. Next, configure the vector store. Then, sync the data (which embeds and stores the documents). Finally, query the knowledge base.",
+      "scored": true
+    },
+    {
+      "id": 46,
+      "text": "Match the Machine Learning type to its core data requirement.",
+      "type": "matching",
+      "leftItems": ["Supervised Learning", "Unsupervised Learning", "Reinforcement Learning"],
+      "rightItems": ["Reward-based feedback loops", "Labeled datasets", "Unlabeled datasets"],
+      "correct": [1, 2, 0],
+      "explanation": "Supervised learning needs labeled data. Unsupervised learning uses unlabeled data. Reinforcement learning relies on reward-based feedback.",
+      "scored": true
+    },
+    {
+      "id": 47,
+      "text": "Match the AWS AI service to its primary use case.",
+      "type": "matching",
+      "leftItems": ["Amazon Rekognition", "Amazon Polly", "Amazon Transcribe"],
+      "rightItems": ["Text-to-Speech conversion", "Speech-to-Text conversion", "Image and video analysis"],
+      "correct": [2, 0, 1],
+      "explanation": "Rekognition is for images/video. Polly turns text into lifelike speech. Transcribe converts spoken audio into text.",
+      "scored": true
+    },
+    {
+      "id": 48,
+      "text": "Match the Generative AI term to its definition.",
+      "type": "matching",
+      "leftItems": ["Prompt", "Embedding", "Token"],
+      "rightItems": ["Numerical vector representation of semantic meaning", "A basic unit or fragment of text data", "The text instruction provided by the user"],
+      "correct": [2, 0, 1],
+      "explanation": "A prompt is the user's instruction. An embedding is a vector representation. A token is a fragment of a word used by the model.",
+      "scored": true
+    },
+    {
+      "id": 49,
+      "text": "Match the Amazon Bedrock feature to its functional capability.",
+      "type": "matching",
+      "leftItems": ["Bedrock Guardrails", "Bedrock Agents", "Knowledge Bases"],
+      "rightItems": ["Execute actions via APIs", "Fetch external contextual data (RAG)", "Filter toxic content and PII"],
+      "correct": [2, 0, 1],
+      "explanation": "Guardrails filter content. Agents execute actions. Knowledge Bases retrieve external data for RAG.",
+      "scored": true
+    },
+    {
+      "id": 50,
+      "text": "Match the AWS AI service to its level of abstraction.",
+      "type": "matching",
+      "leftItems": ["Amazon Bedrock", "Amazon SageMaker", "Amazon Q Business"],
+      "rightItems": ["Platform to build, train, and deploy custom models", "Ready-to-use corporate GenAI assistant", "API access to fully managed Foundation Models"],
+      "correct": [2, 0, 1],
+      "explanation": "Bedrock provides API access to FMs. SageMaker is a platform to build/train custom models. Q Business is a ready-to-use corporate assistant.",
+      "scored": true
+    },
+    {
+      "id": 51,
+      "text": "What are TWO primary benefits of using Amazon Bedrock over managing your own foundation models? (Select TWO)",
+      "type": "multiple-response",
+      "options": ["It is completely free of charge.", "It offers a serverless experience with no infrastructure to manage.", "It forces all data to be public.", "It provides unified API access to multiple industry-leading models.", "It automatically writes application source code for any platform."],
+      "correct": [1, 3],
+      "explanation": "Bedrock is fully managed (serverless) and offers choice and flexibility by providing a single API to access various FMs from AI21, Anthropic, Cohere, Meta, Mistral, and Amazon.",
+      "scored": false
+    },
+    {
+      "id": 52,
+      "text": "Which TWO of the following use cases are excellent fits for Generative AI Large Language Models? (Select TWO)",
+      "type": "multiple-response",
+      "options": ["Predicting exact stock market prices.", "Summarizing long legal documents.", "Generating boilerplate code for software developers.", "Calculating complex cryptographic hashes.", "Routing network traffic strictly based on IP addresses."],
+      "correct": [1, 2],
+      "explanation": "LLMs excel at text summarization and code generation. They are poor at precise math calculations or deterministic network routing.",
+      "scored": false
+    },
+    {
+      "id": 53,
+      "text": "Which TWO methods can help an organization optimize inference costs when deploying models on Amazon SageMaker? (Select TWO)",
+      "type": "multiple-response",
+      "options": ["Always using the largest possible LLM available.", "Using smaller, optimized models (SLMs) when appropriate for the task.", "Utilizing Multi-Model Endpoints to host several models on a single instance.", "Disabling all IAM security checks.", "Increasing the default temperature of the model."],
+      "correct": [1, 2],
+      "explanation": "Using Small Language Models (SLMs) saves computing power. Multi-Model Endpoints maximize resource utilization by sharing compute instances across multiple models.",
+      "scored": false
+    },
+    {
+      "id": 54,
+      "text": "Which TWO characteristics accurately describe unstructured data? (Select TWO)",
+      "type": "multiple-response",
+      "options": ["It always resides in highly organized relational databases.", "It lacks a predefined data model or schema.", "It includes formats like video, audio, and raw text.", "It can only be processed by Linear Regression algorithms.", "It consists entirely of numbers arranged in rows and columns."],
+      "correct": [1, 2],
+      "explanation": "Unstructured data has no predefined schema and includes media types like text, audio, and video.",
+      "scored": false
+    },
+    {
+      "id": 55,
+      "text": "Which TWO concepts are core pillars of Responsible AI? (Select TWO)",
+      "type": "multiple-response",
+      "options": ["Ensuring maximum model latency.", "Fairness and mitigation of bias.", "Transparency and explainability of AI decisions.", "Guaranteeing zero computational cost.", "Creating models that cannot be updated."],
+      "correct": [1, 2],
+      "explanation": "Fairness (bias mitigation) and Transparency/Explainability are fundamental guidelines for developing and deploying AI responsibly.",
+      "scored": false
+    },
+    {
+      "id": 56,
+      "text": "What does the 'Top-p' (Nucleus Sampling) parameter do in a Large Language Model?",
+      "type": "multiple-choice",
+      "options": ["It limits the model to only use the top 10 most frequent words in English.", "It restricts the model's vocabulary to a cumulative probability threshold, cutting off the long tail of unlikely tokens.", "It increases the physical RAM allocated to the model.", "It enforces a hard limit on the total number of words in the output."],
+      "correct": [1],
+      "explanation": "Top-p controls diversity by dynamically selecting the smallest set of tokens whose cumulative probability exceeds the threshold 'p'.",
+      "scored": false
+    },
+    {
+      "id": 57,
+      "text": "What is the defining capability of a 'multi-modal' foundation model?",
+      "type": "multiple-choice",
+      "options": ["It can run on multiple operating systems simultaneously.", "It can process and generate outputs across different types of data, such as understanding an image and answering text questions about it.", "It is trained exclusively on multiple languages.", "It requires multiple GPUs to function."],
+      "correct": [1],
+      "explanation": "Multi-modal models can process multiple data modalities natively (e.g., text, images, audio) rather than being restricted to just one.",
+      "scored": false
+    },
+    {
+      "id": 58,
+      "text": "Diffusion models (like Stable Diffusion) are primarily known for which use case?",
+      "type": "multiple-choice",
+      "options": ["Translating speech to text.", "Generating high-quality images from text prompts.", "Predicting customer churn rates.", "Analyzing database logs for security threats."],
+      "correct": [1],
+      "explanation": "Diffusion models learn to generate data by reversing a process of adding noise, and they are the standard architecture for modern AI image generation.",
+      "scored": false
+    },
+    {
+      "id": 59,
+      "text": "In an AWS AI architecture, what is the primary role of AWS CloudTrail?",
+      "type": "multiple-choice",
+      "options": ["To train deep learning neural networks.", "To provide a serverless vector database.", "To log and monitor API calls made to AWS AI services for security and auditing.", "To mask PII in generative AI outputs."],
+      "correct": [2],
+      "explanation": "CloudTrail records AWS API calls, enabling governance, compliance, and operational/risk auditing of your AWS account, including AI service usage.",
+      "scored": false
+    },
+    {
+      "id": 60,
+      "text": "What is SageMaker Batch Transform typically used for?",
+      "type": "multiple-choice",
+      "options": ["Providing real-time chatbot responses.", "Making predictions on large datasets offline without needing a persistent endpoint.", "Training a model continuously as new data streams in.", "Labeling image data using human workforces."],
+      "correct": [1],
+      "explanation": "Batch Transform is ideal for scenarios where you need to get inferences for entire datasets offline and don't require a persistent, real-time endpoint.",
+      "scored": false
+    },
+    {
+      "id": 61,
+      "text": "Which AWS service would you use to automatically identify celebrities, detect unsafe content, or extract text from an image?",
+      "type": "multiple-choice",
+      "options": ["Amazon Textract", "Amazon Rekognition", "Amazon Comprehend", "Amazon Personalize"],
+      "correct": [1],
+      "explanation": "Amazon Rekognition offers pre-trained and customizable computer vision capabilities to extract information and insights from images and videos.",
+      "scored": false
+    },
+    {
+      "id": 62,
+      "text": "A media company wants to convert written news articles into lifelike audio podcasts. Which AWS service should they use?",
+      "type": "multiple-choice",
+      "options": ["Amazon Transcribe", "Amazon Lex", "Amazon Translate", "Amazon Polly"],
+      "correct": [3],
+      "explanation": "Amazon Polly is a cloud service that converts text into lifelike spoken audio, supporting multiple languages and voices.",
+      "scored": false
+    },
+    {
+      "id": 63,
+      "text": "A call center wants to automatically generate text transcripts from their recorded customer service calls. Which service is best suited?",
+      "type": "multiple-choice",
+      "options": ["Amazon Transcribe", "Amazon Comprehend", "Amazon Polly", "Amazon Textract"],
+      "correct": [0],
+      "explanation": "Amazon Transcribe is an automatic speech recognition service that makes it easy to add speech-to-text capabilities to applications.",
+      "scored": false
+    },
+    {
+      "id": 64,
+      "text": "What is the purpose of Data Augmentation in machine learning?",
+      "type": "multiple-choice",
+      "options": ["To encrypt data before training.", "To artificially increase the size and diversity of a training dataset by applying transformations (like flipping or rotating images).", "To delete outliers from a dataset.", "To move data from on-premises to the cloud."],
+      "correct": [1],
+      "explanation": "Data augmentation techniques expand the training dataset artificially, which helps prevent overfitting and improves the model's ability to generalize.",
+      "scored": false
+    },
+    {
+      "id": 65,
+      "text": "During data preparation for a machine learning model, you need to ensure no sensitive customer information (like credit card numbers) is included in your Amazon S3 buckets. Which AWS service can automate this discovery?",
+      "type": "multiple-choice",
+      "options": ["Amazon Macie", "AWS WAF", "Amazon GuardDuty", "AWS IAM"],
+      "correct": [0],
+      "explanation": "Amazon Macie is a data security and privacy service that uses ML and pattern matching to discover and protect sensitive data (like PII) stored in AWS.",
+      "scored": false
+    }
+  ]
+}
